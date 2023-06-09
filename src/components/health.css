@@ -1,0 +1,62 @@
+
+.health{
+
+    padding-left: 25px;
+}
+video{
+    width: 1200px;
+    height: 800px;
+    padding-right: 90px;
+    /* margin-top: 70px; */
+}
+
+
+    
+.grid-mor{
+    display: grid;
+    grid-template-columns: repeat(6,1fr); 
+    grid-gap: 16px;
+    height: 300px; 
+     border-radius: 10px;
+    
+
+}
+
+.grid-first{
+    background-color:  rgb(174, 223, 174);
+    padding: 16px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.grid-first h1{
+    font-size: 15px;
+}
+
+button{
+    background-color: rgb(174, 223, 174);
+    margin-top: 10px;
+    height: 30px;
+    width: 120px;
+    border-radius: 15px;
+    border-color: white;
+}
+.grid-mamcare{
+  display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+ grid-gap: 16px;
+    /* height: 400px; */
+    position: relative;
+    font-size: 15px;margin-top: -60px;
+    
+
+
+}
+.grid-mam{
+    background-color:  rgb(174, 223, 174);
+    padding: 16px; 
+    border-radius: 20px;
+
+}
+.grid-mam h1{
+    font-size: 15px;
+}
