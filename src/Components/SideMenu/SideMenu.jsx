@@ -28,6 +28,9 @@ function SideMenu(){
                 <Oneforprop
                 icon ={icon5} name="Heathcare" link='/healthcare'/>
            </div>
+           <div className="button">
+            <button className="btn">Log out</button>
+           </div>
         </div>
     )
 }

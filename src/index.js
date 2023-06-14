@@ -13,7 +13,7 @@ const router=createBrowserRouter([
     element:<App />
   },
   {
-    path:"/doctorlayout",
+    path:"/dashboard",
     element:<Doctordashboard/>
   }
 ])
