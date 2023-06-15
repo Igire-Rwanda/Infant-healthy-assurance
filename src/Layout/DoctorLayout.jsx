@@ -12,7 +12,7 @@ function DoctorLayout({ children }) {
         <div>
           <SideMenu />
         </div>
-        <div className="body">{children}</div>
+        <div >{children}</div>
       </div>
     </>
   );
