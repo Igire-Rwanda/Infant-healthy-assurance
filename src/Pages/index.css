@@ -1,56 +1,157 @@
 #home {
-  height: 150vh;
-  /* display: grid; */
-  /* grid-template-rows: 0.1fr 1fr 0.8fr 1fr; */
-  font-family: sans-serif;
+  /* font-family: 'Mr Dafoe', cursive; */
+  font-family: "Poppins", sans-serif;
 }
 
 #home-header {
+  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: space-between;
 }
 #home-logo {
-  color: #a3d8a5;
+  color: #73ee77;
+  margin-left: 50px;
+  font-size: 13px;
 }
 #home-logo span {
   color: black;
+  font-family: "Mr Dafoe", cursive;
+  font-size: 32px;
 }
 #home-login button {
-  border: 2px solid #a3d8a5;
+  border: 2px solid #73ee77;
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0);
   padding: 0px 40px;
   margin: 10px 30px 0 0;
+  font-family: "Poppins", sans-serif;
 }
 #home-body-part1 {
-  background-color: rgba(163, 216, 165, 0.24);
+  background-color: rgba(163, 216, 165, 0.34);
   height: 500px;
   display: flex;
   justify-content: space-between;
 }
-#home-image {
-  background-color: #a3d8a5;
-  width: 300px;
-  margin-left: 50px;
-  height: 300px;
+#img-background {
+  background-color: #73ee77;
+  width: 350px;
+  margin: 100px 0 0 50px;
+  height: 350px;
+  border-radius: 50px;
 }
-img {
+#home-image img {
   height: 500px;
+  position: absolute;
+  left: 80px;
 }
 #home-intro {
   padding-right: 30px;
 }
 #home-intro h4 {
-  font-size: 30px;
+  font-size: 20px;
   letter-spacing: 2px;
 }
 #home-intro p {
   font-size: 17px;
   letter-spacing: 1px;
 }
-#home-body-part2 {
-  background-color: bisque;
+.logo-proto {
+  color: #73ee77;
 }
+.logo-proto span {
+  color: black;
+  font-family: "Mr Dafoe", cursive;
+  font-size: 28px;
+}
+#home-body-part2 {
+  display: block;
+}
+.home-color {
+  color: #73ee77;
+}
+#home-circles {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.home-circle {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(163, 216, 165, 0.34);
+  border-radius: 50%;
+  margin: 0px 0 0 50px;
+}
+.horizontal {
+  width: 200px;
+  padding: 100px 0 0 50px;
+}
+.full-circle h3 {
+  padding-left: 50px;
+}
+
 #home-body-part3 {
-  background-color: blueviolet;
+  /* height: 70vh; */
+  background-color: rgba(163, 216, 165, 0.34);
+}
+
+#home-cards {
+  display: flex;
+  margin-left: 80px;
+  gap: 50px;
+}
+.home-card {
+  width: 300px;
+  height: 450px;
+  background-color: white;
+  margin: 70px 0 50px 50px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 3px 3px rgba(128, 128, 128, 0.452);
+}
+.home-card .small-circle {
+  width: 130px;
+  height: 130px;
+  background-color: rgba(163, 216, 165, 0.34);
+  margin: 30px 0 0 90px;
+  border-radius: 50%;
+}
+.home-card:hover {
+  transform: translate(5px, -5px);
+}
+
+.the-small-circle h3 {
+  padding-left: 10px;
+}
+.the-small-circle p {
+  padding: 0px 30px 30px 30px;
+}
+#home-footer {
+  height: 20vh;
+  display: grid;
+  grid-template-rows: 0.8fr 0.8fr;
+}
+#home-footer-first {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+#home-footer-second {
+  background-color: rgba(163, 216, 165, 0.34);
+  font-size: 15px;
+}
+.doc-quick-register button {
+  border: 2px solid #73ee77;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0px 40px;
+  margin: 10px 30px 0 0;
+  font-family: "Poppins", sans-serif;
+}
+.logo-proto a {
+  color: #73ee77;
+  text-decoration: none;
+}
+.logo-proto a span {
+  color: black;
+  font-family: "Mr Dafoe", cursive;
+  font-size: 28px;
 }

@@ -1,0 +1,116 @@
+#register-sides {
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(163, 216, 165, 0.34);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#home-logo {
+  margin-right: 500px;
+}
+.doctor-image-profile img {
+  position: absolute;
+  margin-top: -600px;
+  height: 600px;
+  left: 30px;
+}
+.black-background-profile {
+  background-color: #3b3a3a;
+  width: 400px;
+  height: 450px;
+  border-radius: 50px;
+  margin: 300px 0 0 90px;
+}
+.register-right-side {
+  text-align: left;
+  margin-top: 50px;
+}
+
+.patients-details h4 {
+  width: 130px;
+  border-bottom: 3px solid #73ee77;
+}
+.residence-addresses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#register-verify {
+  margin-left: 30px;
+  padding: 10px 30px;
+  background-color: #3b3a3a;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+#register-verify:hover {
+  background-color: #73ee7700;
+  border: 2px solid #3b3a3a;
+  color: #3b3a3a;
+  transform: translate(2px, -2px);
+}
+.register-right-side input {
+  background-color: #b6c0b6;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.larger-input {
+  padding: 10px 400px 10px 10px;
+}
+.second-larger-input {
+  padding: 10px 135px;
+}
+.medium-input {
+  padding: 10px 60px 10px 10px;
+}
+.mobile-verify p {
+  font-size: 12px;
+  margin-top: -1px;
+}
+.partners-details h4 {
+  width: 130px;
+  border-bottom: 3px solid #73ee77;
+}
+.babys-details h4 {
+  width: 110px;
+  border-bottom: 3px solid #73ee77;
+}
+.baby-age-gender {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#age {
+  border-radius: 10px;
+  border: none;
+  background-color: #b6c0b6;
+}
+#gender {
+  border-radius: 10px;
+  border: none;
+  background-color: #b6c0b6;
+}
+#the-register-submit {
+  padding: 10px 250px;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bolder;
+  border-radius: 10px;
+  border: none;
+  background-color: #3b3a3a;
+  color: white;
+  font-size: 17px;
+}
+#the-register-submit:hover {
+  background-color: #73ee7700;
+  border: 2px solid #3b3a3a;
+  color: #3b3a3a;
+}
+.login-link a {
+  color: rgb(0, 136, 255);
+}
+#submit-login-link p {
+  margin-bottom: 50px;
+  text-align: center;
+}
