@@ -1,6 +1,6 @@
 #home {
-  /* font-family: 'Mr Dafoe', cursive; */
   font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 
 #home-header {
@@ -9,7 +9,7 @@
   justify-content: space-between;
 }
 #home-logo {
-  color: #73ee77;
+  color: #a3d8a5;
   margin-left: 50px;
   font-size: 13px;
 }
@@ -19,7 +19,7 @@
   font-size: 32px;
 }
 #home-login button {
-  border: 2px solid #73ee77;
+  border: 2px solid #a3d8a5;
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0);
   padding: 0px 40px;
@@ -33,7 +33,7 @@
   justify-content: space-between;
 }
 #img-background {
-  background-color: #73ee77;
+  background-color: #a3d8a5;
   width: 350px;
   margin: 100px 0 0 50px;
   height: 350px;
@@ -56,7 +56,7 @@
   letter-spacing: 1px;
 }
 .logo-proto {
-  color: #73ee77;
+  color: #a3d8a5;
 }
 .logo-proto span {
   color: black;
@@ -67,7 +67,7 @@
   display: block;
 }
 .home-color {
-  color: #73ee77;
+  color: #a3d8a5;
 }
 #home-circles {
   display: flex;
@@ -90,7 +90,6 @@
 }
 
 #home-body-part3 {
-  /* height: 70vh; */
   background-color: rgba(163, 216, 165, 0.34);
 }
 
@@ -125,33 +124,53 @@
   padding: 0px 30px 30px 30px;
 }
 #home-footer {
-  height: 20vh;
   display: grid;
-  grid-template-rows: 0.8fr 0.8fr;
+  grid-template-columns: 0.3fr 0.8fr;
 }
 #home-footer-first {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 30px;
+  margin-top: -25px;
+  margin-left: 800px;
 }
 #home-footer-second {
-  background-color: rgba(163, 216, 165, 0.34);
   font-size: 15px;
 }
-.doc-quick-register button {
-  border: 2px solid #73ee77;
-  border-radius: 50px;
-  background-color: rgba(255, 255, 255, 0);
-  padding: 0px 40px;
-  margin: 10px 30px 0 0;
-  font-family: "Poppins", sans-serif;
-}
 .logo-proto a {
-  color: #73ee77;
+  color: #a3d8a5;
   text-decoration: none;
 }
 .logo-proto a span {
   color: black;
   font-family: "Mr Dafoe", cursive;
   font-size: 28px;
+}
+
+.pregnanticon1 img {
+  width: 80px;
+  height: 120px;
+  margin-top: 40px;
+}
+.fetus img {
+  width: 120px;
+  height: 120px;
+  margin-top: 40px;
+}
+.toddler img {
+  width: 80px;
+  height: 120px;
+  margin-top: 40px;
+}
+.calendar img {
+  width: 60px;
+  height: 60px;
+  margin: 35px 0 0 10px;
+}
+.meter img {
+  width: 60px;
+  height: 60px;
+  margin: 35px 0 0 10px;
+}
+.tips img {
+  width: 40px;
+  height: 45px;
+  margin: 40px 0 0 0px;
 }

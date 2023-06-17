@@ -1,6 +1,8 @@
 import React from "react";
 import "./index.css";
 import "./register.css";
+import pregnanticon from "../Images/pregnanticon.png";
+import "../Components/Header/header.css";
 import DoctorImg from "../Images/Doctor-removebg-preview.png";
 
 const Login = () => {
@@ -13,10 +15,17 @@ const Login = () => {
     <div>
       <div id="register-sides">
         <div className="register-left-side">
-          <div id="home-logo">
-            <h2>
-              Mama<span>Care</span>
-            </h2>
+          <div className="header-left">
+            <div className="pregnantico">
+              <img src={pregnanticon} alt="" />
+            </div>
+            <div id="name-logo">
+              <h2>
+                <a href="/dashboard">
+                  Mama<span>Care</span>
+                </a>
+              </h2>
+            </div>
           </div>
           <div className="register-image-profile">
             <div className="black-background-profile"></div>
@@ -39,7 +48,18 @@ const Login = () => {
               <input type="text" className="second-larger-input" />
               <button id="register-verify">VERIFY</button>
               <br />
+              <label>Patient's ID</label>
+              <p>(Enter the ID number sent on your mobile phone)</p>
+              <input type="text" className="second-larger-input" />
             </div>
+
+            <label>Health condition</label>
+            <br />
+            <input type="text" className="second-larger-input" />
+            <br />
+            <label>Date of Arrival</label>
+            <br />
+            <input type="text" className="medium-input" />
             <div className="residence-addresses">
               <div className="residence-addresses-left">
                 <label>City/Province</label>
@@ -122,12 +142,15 @@ const Login = () => {
           <div id="submit-login-link">
             <button id="the-register-submit">Submit</button>
             <p className="login-link">
-              Already registered? <a href="#">Login here</a>
+              Already registered? <a href="/login">Login here</a>
             </p>
           </div>
         </div>
       </div>
       <div id="home-footer">
+        <div id="home-footer-second">
+          <p>Copyright 2023 - MamaCare. All rights reserved</p>
+        </div>
         <div id="home-footer-first">
           <div className="logo-back-to-top">
             <h4 className="logo-proto">
@@ -136,14 +159,6 @@ const Login = () => {
               </a>
             </h4>
           </div>
-          {/* <div className="doc-quick-register">
-            <button>
-              <h3>Register Form</h3>
-            </button>
-          </div> */}
-        </div>
-        <div id="home-footer-second">
-          <p>Copyright 2023 - MamaCare. All rights reserved</p>
         </div>
       </div>
     </div>
