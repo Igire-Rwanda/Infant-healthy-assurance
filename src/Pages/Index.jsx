@@ -1,6 +1,7 @@
 import React from "react";
-import "./index.css";
-import HomeImage from "../Images/pexels-hillary-disantos-9224346-removebg-preview.png";
+import "../App.css";
+import HomeImage from "../assets/Images/pexels-hillary-disantos-9224346-removebg-preview.png";
+import { Link } from "react-router-dom";
 
 function HomeIndex() {
   return (
@@ -12,9 +13,9 @@ function HomeIndex() {
           </h2>
         </div>
         <div id="home-login">
-          <button>
-            <h3>Log In</h3>
-          </button>
+          <Link to="/login" className="logi">
+            Login
+          </Link>
         </div>
       </div>
       <div id="home-body-part1">
