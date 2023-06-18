@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hono{
+    color: rgb(18, 17, 17);
+}
+.com ul li{
+    width: 70px;
+    height: 50px;
+}
+
+.box-container{
+    width: 40%;
+    height: 770px;;
+    background:rgb(166, 202, 166);
+    opacity:5;
+    margin-left: 30%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 50px;
+}
+.box-container input{
+    margin-top:4%;
+    margin-left: 20%;
+    width: 400px;
+    height: 40px;
+    font-size:15px;
+    color: black;
+    
+}
+.circle input{
+    margin-left: 11%;
+}
+
+.box-container h3{
+    color:black;
+    font-family: monospace;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18px;
+    padding-top:3%;
+    margin-bottom: -3%;
+}
+.Paragraphy-1{
+ margin-left: 20%;
+ font-size: 20px;
+
+}
+.box-container h2{
+    text-decoration: underline;
+    font-size: 25px;
+    margin-left: 15%;
+    padding-top: 3%;
+}
+.hono{
+    margin-left: 10%;
+    font-size: 20px;
+    
+
+}
+.circle{
+    margin-left: 10%;
+    font-size: 20px;
+
+}
+.line{
+    margin-left: 10%;
+    font-size: 20px;
+
+}
+.rerwa{
+    margin-left: 10%;
+    font-size: 20px;
+    margin-left: 30%;
+
+}
+.circles-1{
+    width: 40px;
+    height: 40px;
+    background-color:white;
+    border-radius: 50%;
+}
+.circles-2{
+    width: 40px;
+    height: 40px;
+    background-color:white;
+    border-radius: 50%;
+}
+.kamur{
+    display: flex;
+    gap:3%;
+    margin-right:35%;
+}
+.kamure{
+    display: flex;
+    gap: 30%;
+    margin-left:20%;
+}
+.both{
+    display: flex;
+    margin-left: 10%;
+    gap: 200px;
+}
+.para{
+    margin-left: 70px;
+}
+.parag{
+    margin-left: 70px;
+}
