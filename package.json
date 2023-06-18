@@ -6,9 +6,14 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "json-server": "^0.17.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-native": "^0.71.11",
+=======
+    "react-router-dom": "^6.12.1",
+>>>>>>> ef8fb0694620403d5679a295eb75320360be25be
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
