@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import "./App.css";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Doctordashboard from './Pages/Doctordashboard';
 import Healthcare from './Pages/Healthcare';
+import Bloadcastpage from "./Pages/Bloadcastpage"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router=createBrowserRouter([
@@ -20,7 +22,11 @@ const router=createBrowserRouter([
   {
     path:"/healthcare",
     element:<Healthcare/>
-  }
+  },
+  {
+  path:"/bloadcast",
+  element:<Bloadcastpage/>
+}
 ])
 root.render(
  <RouterProvider router={router}/>
