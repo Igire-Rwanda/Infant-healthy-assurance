@@ -1,8 +1,8 @@
 import React from "react"
 import './Appointment.css'
  const Appointment = () =>{
-    const [date, setDate] = useState(new Date());
-    const [show, setShow] = useState(false);
+    const [date, setDate] = "useState(new Date())";
+    const [show, setShow] = "useState(false)";
   
     const onChange = (event, selectedDate) => {
       const currentDate = selectedDate || date;
