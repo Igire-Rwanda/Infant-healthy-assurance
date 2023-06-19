@@ -4,31 +4,49 @@ import { Link } from "react-router-dom";
 import "../style/login.css";
 import React, { useState } from "react";
 function DoctorLogin() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  const realValues = {
+    name: "",
+    password: "",
+  };
+
+  const [formValues, setFormvalues] = useState(realValues);
+
+  const [setSubmited] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormvalues({ ...formValues, [name]: value });
+  };
 
   const handleLogin = async (e) => {
     e.preventDefault();
-
+    sendData();
+    setSubmited(true);
+  };
+  const sendData = async () => {
     try {
-      const response = await fetch("/api/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ username, password }),
-      });
+      const response = await fetch(
+        "http://localhost:3000/api/v1/doctor/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formValues),
+        }
+      );
 
       if (response.ok) {
         window.location.href = "/dashboard";
       } else {
-        const data = await response.json();
-        setError(data.message);
+        throw new Error("failed to save data");
       }
     } catch (error) {
-      setError("An error occurred. Please try again later.");
+      console.error("An error occurred. Please try again later.", error);
     }
+  };
+  const HandleLogin = () => {
+    window.location.href = "/login";
   };
   return (
     <>
@@ -51,22 +69,24 @@ function DoctorLogin() {
               <br />
               <input
                 type="text"
-                id="username"
+                name="name"
                 className="input1"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
+                value={realValues.username}
+                onChange={handleChange}
+                required
               />
               <br />
               <label htmlFor="Password">Password</label>
               <br />
               <input
                 type="password"
-                id="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                name="password"
+                value={realValues.userpassword}
+                onChange={handleChange}
+                required
               />
             </form>
-            <button className="btn-login" type="submit">
+            <button className="btn-login" onClick={HandleLogin}>
               Login
             </button>
           </div>

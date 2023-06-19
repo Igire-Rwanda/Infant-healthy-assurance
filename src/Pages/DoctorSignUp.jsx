@@ -5,32 +5,53 @@ import "../style/DoctorSignUp.css";
 import React, { useState } from "react";
 import { AiOutlineLock } from "react-icons/ai";
 
-function DoctorLogin() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+function DoctorSignUp() {
+  const realValues = {
+    name: "",
+    email: "",
+    password: "",
+    role: "",
+    healthCenter: "",
+  };
+  const [formValues, setFormvalues] = useState(realValues);
 
-  const handleLogin = async (e) => {
+  const [setSubmited] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormvalues({ ...formValues, [name]: value });
+  };
+
+  const handleSign = async (e) => {
     e.preventDefault();
+    sendData();
+    setSubmited(true);
+  };
 
+  const sendData = async () => {
     try {
-      const response = await fetch("/api/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ username, password }),
-      });
+      const response = await fetch(
+        "http://localhost:3000/api/v1/doctor-account",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formValues),
+        }
+      );
 
       if (response.ok) {
         window.location.href = "/dashboard";
       } else {
-        const data = await response.json();
-        setError(data.message);
+        throw new Error("failed to save data");
       }
     } catch (error) {
-      setError("An error occurred. Please try again later.");
+      console.error("An error occurred. Please try again later.", error);
     }
+  };
+  const handleSignup = () => {
+    window.location.href = "/sign-up";
   };
   //
   return (
@@ -49,43 +70,54 @@ function DoctorLogin() {
         <div className="right">
           <div className="body">
             <h3 className="welcome">Welcome!</h3>
-            <form onSubmit={handleLogin}>
+            <form onSubmit={handleSign}>
               <label htmlFor="Name">Name</label>
               <br />
               <input
                 type="text"
-                id="username"
+                name="name"
                 className="input1"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
+                value={realValues.username}
+                onChange={handleChange}
+                required
               />
               <br />
               <label htmlFor="email">Email Address</label>
               <br />
               <input
-                type="password"
-                id="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                type="email"
+                name="email"
+                value={realValues.useremail}
+                onChange={handleChange}
+                required
               />
               <br />
               <div className="two-inputs">
-                <label htmlFor="password">New Password</label>
+                <label htmlFor="password">Password</label>
                 <br />
                 <div className="input-cont">
                   <AiOutlineLock className="ico1" />
-                  <input type="password" />
+                  <input
+                    type="password"
+                    name="password"
+                    value={realValues.userpassword}
+                    onChange={handleChange}
+                    required
+                  />
                 </div>
                 <br />
-                <label htmlFor="password">Confirm Password</label>
+                <label htmlFor="text">health Center</label>
                 <br />
-                <div className="input-cont2">
-                  <AiOutlineLock className="ico2" />
-                  <input type="password" />
-                </div>
+                <input
+                  type="text"
+                  name="healthCenter"
+                  value={realValues.userhealthCenter}
+                  onChange={handleChange}
+                  required
+                />
               </div>
             </form>
-            <button className="btn-login" type="submit">
+            <button className="btn-login" onClick={handleSignup}>
               Sign Up
             </button>
           </div>
@@ -106,4 +138,4 @@ function DoctorLogin() {
     </>
   );
 }
-export default DoctorLogin;
+export default DoctorSignUp;
