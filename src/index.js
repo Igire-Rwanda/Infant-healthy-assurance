@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Doctordashboard from './Pages/Doctordashboard';
 import Healthcare from './Pages/Healthcare';
+import Healthinfo from './Pages/Healthinfo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router=createBrowserRouter([
@@ -18,9 +19,14 @@ const router=createBrowserRouter([
     element:<Doctordashboard/>
   },
   {
-    path:"/healthcare",
+    path:"/healthcareinfo",
     element:<Healthcare/>
+  },
+  {
+    path:"/healthcare",
+    element:<Healthinfo/>
   }
+
 ])
 root.render(
  <RouterProvider router={router}/>
