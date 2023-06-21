@@ -2,7 +2,6 @@
 function Developinfo(props){
     return(
         <div className="list">
-            
             <select name="text" inputmode="text" className="input">
              <option value="Gender" >{props.name}</option>
              <option value="">{props.one}</option>

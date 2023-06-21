@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+// import './index.css';
 import "./App.css";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -8,6 +8,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Doctordashboard from './Pages/Doctordashboard';
 import Healthcare from './Pages/Healthcare';
 import Bloadcastpage from "./Pages/Bloadcastpage"
+import Page2 from "./Components/Bloadcast-page/page2"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router=createBrowserRouter([
@@ -26,6 +27,10 @@ const router=createBrowserRouter([
   {
   path:"/bloadcast",
   element:<Bloadcastpage/>
+},
+{
+  path:"/page2",
+  element:<Page2/>
 }
 ])
 root.render(
