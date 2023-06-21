@@ -7,6 +7,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Doctordashboard from "./Pages/Doctordashboard";
 import Healthcare from "./Pages/Healthcare";
 import Registration from "./Pages/register";
+import Healthinfo from './Pages/Healthinfo';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const router = createBrowserRouter([
@@ -19,15 +20,22 @@ const router = createBrowserRouter([
     element: <Doctordashboard />,
   },
   {
-    path: "/healthcare",
-    element: <Healthcare />,
-  },
-  {
     path: "/register",
     element: <Registration />,
   },
-]);
-root.render(<RouterProvider router={router} />);
+  {
+    path:"/healthcareinfo",
+    element:<Healthcare/>
+  },
+  {
+    path:"/healthcare",
+    element:<Healthinfo/>
+  }
+
+])
+root.render(
+ <RouterProvider router={router}/>
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
