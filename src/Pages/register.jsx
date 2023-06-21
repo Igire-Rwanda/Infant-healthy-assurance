@@ -1,4 +1,4 @@
-import React from "react";
+  import React from "react";
 import "./index.css";
 import "./register.css";
 import pregnanticon from "../Images/pregnanticon.png";
@@ -59,7 +59,7 @@ const Login = () => {
             <br />
             <label>Date of Arrival</label>
             <br />
-            <input type="text" className="medium-input" />
+            <input type="date" className="medium-input" />
             <div className="residence-addresses">
               <div className="residence-addresses-left">
                 <label>City/Province</label>
@@ -118,7 +118,7 @@ const Login = () => {
                   <option value="6mon">6 months</option>
                   <option value="7mon">7 months</option>
                   <option value="8mon">8 months</option>
-                  <option value="9mon">0 months</option>
+                  <option value="9mon">9 months</option>
                   <option value="10mon">10 months</option>
                   <option value="11mon">11 months</option>
                   <option value="1year">1 year</option>
