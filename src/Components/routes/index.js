@@ -6,6 +6,8 @@ function Index() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/Appointment" element={<Appointment />} />
+      
     </Routes>
   );
 }

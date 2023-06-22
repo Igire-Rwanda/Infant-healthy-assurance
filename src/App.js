@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
-import { StyleSheet,setText, View, Platform } from 'react-native';
-import DateTimePicker from '@react-native-community/datetimepicker';
-import Appointment from '../src/Components/Appointment.jsx'
-import "./App.css";
+import React from 'react';
+// import { BrowserRouter as Router, Route, Switch }
+//  from 'react-router-dom';
+import Appointment from '../src/Pages/Appointment';
 
-import Home from "./Pages/index.jsx"
+import  "./App.css"; 
+
 function App() {
   return (
-    <div className="App">
-    
-      <Home/>
-    </div>
+    <>
+  
+  
+      <Appointment/>
+    </>
   );
 }
 export default App;

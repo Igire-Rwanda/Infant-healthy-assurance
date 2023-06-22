@@ -1,62 +1,48 @@
-import React from "react"
-import './Appointment.css'
- const Appointment = () =>{
-    const [date, setDate] = "useState(new Date())";
-    const [show, setShow] = "useState(false)";
-  
-    const onChange = (event, selectedDate) => {
-      const currentDate = selectedDate || date;
-      setShow(Platform.OS === 'ios');
-      setDate(currentDate);
-  
-      let template = new Date(currentDate);
-      let fDate =
-        template.getDate() + '/' + (template.getMonth() + 1) + '/' + template.getFullYear();
-      let fTime =
-        'Hours: ' + template.getHours() + ' | Minutes: ' + template.getMinutes();
-      setText(fDate + '\n' + fTime);
-  
-      console.log(fDate + ' (' + fTime + ')');
-    };
+import React from "react";
+import DoctorLayout from "../Layout/DoctorLayout";
+import "../Pages/Appointment.css"
+import Img from "../Images/Doctor image.jpeg" 
+export default function Appointment(){
+    return ( 
 
-  
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-  });
-  return( 
+        <DoctorLayout>
+            <div className="part-1">
+
+            <div className="img">
+            <img src={Img} alt="" width="500px" height="780px"/>
+            </div>
+            
     <div className="box-container">
-        <h2>Doctor Appointment Request Form  (D.A.R.F)</h2> <br></br><br></br>
+       
+        <h2>Doctor Appointment Request Form  (D.A.R.F)</h2> <br></br>
+    
         <div className="Paragraphy-1">
             <p>Fill the form below and we will get back soon <br></br>
                  to you for more updates and your appointment.</p>
                </div>
-               <input type="email"placeholder="User name"/>
+               <input type="text"placeholder="User name"/>
                <div className="kamure">
-               <h3>Gender</h3>
-               <h3>Phone number or ID</h3>
-            </div>
+               {/* <h3>Gender</h3> */}
+               <input type="Gender"placeholder="Gender"/>
+              
+               </div><br></br>
+               <h3>Phone number</h3>
                <div className="kamur">
-        <input type="text"placeholder="Please Select "/> 
-       
-        <input type="number"placeholder="(0000)-000-000"/>
-         </div>
+
+               <input type="number"placeholder="(0000)-000-000"/> 
+               <input type=""placeholder="Phone number or ID"/>
+         </div><br></br>
         <h3>E-mail</h3>
-        <input type="email"placeholder="ex:myname@example.com"/>
-        <h3>Password</h3>
-        <input type="password"placeholder="Enter your password"/>
-       <div className="hono">
+        <input type="E-mail"placeholder="ex:myname@example.com"/>
+        <input type="Password"placeholder="Enter your password"/>
+       <div className="hono"><br></br>
         <p>Have you ever applied to our facility before?</p>
+        </div>
         <div className="both">
         <div class="circles-1">
-            <div className="parag">
+            <div className="parag"><br></br>
             <p>Yes</p>
         </div>
-
         </div>
         <div className="circles-2">
             <div className="para">
@@ -65,23 +51,31 @@ import './Appointment.css'
             
          </div>
          </div>
-    </div>
-       <div className="circle">
+       <div className="circle"><br></br>
         <p>Which Department would you like to get an appointment from?</p>
+        </div>
+        <div className="nav-bar">
         <input type="email"placeholder=""/>
-    </div>
-    <div class Name="line">
-     <p>Which procedure do you want to make an appointment for?</p>
-    </div>
-        <div className="head">
-            <input type="password"placeholder="  Please select"/>
+    </div><br></br>
+    <div className="par">
+            <p>Which procedure do you want to make an appointment for?</p>
+            <div className="care">
+            <select>
+                <option value ="option">Medical Examination</option>
+                <option value ="option">Doctor Check</option>
+                <option value ="option">Result Analysis</option>
+                <option value ="option">Check-Up</option>
+            </select>
+            </div>
         </div>
-        <div className="rerwa">
-            <p>Preferred Appointment Date</p> <br></br>
+        <div className="natus"> <br></br>
+            <p>Preferred Appointment Date</p>
         </div>
         </div>
+        </div>
+          </DoctorLayout>
+          );
+         
+        }
 
-    );
- }
 
- export default Home;
