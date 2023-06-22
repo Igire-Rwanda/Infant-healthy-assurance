@@ -8,6 +8,11 @@ import Doctordashboard from "./Pages/Doctordashboard";
 import Healthcare from "./Pages/Healthcare";
 import Registration from "./Pages/register";
 import Healthinfo from './Pages/Healthinfo';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+import Bloadcastpage from "./Pages/Bloadcastpage"
+import Page2 from "./Components/Bloadcast-page/page2"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const router = createBrowserRouter([
@@ -30,8 +35,15 @@ const router = createBrowserRouter([
   {
     path:"/healthcare",
     element:<Healthinfo/>
-  }
-
+  },
+  {
+  path:"/bloadcast",
+  element:<Bloadcastpage/>
+},
+{
+  path:"/page2",
+  element:<Page2/>
+}
 ])
 root.render(
  <RouterProvider router={router}/>
