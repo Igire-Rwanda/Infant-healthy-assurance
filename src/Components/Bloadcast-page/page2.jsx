@@ -1,5 +1,5 @@
 import React from "react"
-
+import "../../App.css"
 function Page2(){
     return(
         <div className="para1">

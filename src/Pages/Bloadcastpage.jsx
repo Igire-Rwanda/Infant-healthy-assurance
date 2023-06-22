@@ -8,6 +8,7 @@ import img from "../Images/image4.png"
 import img1 from "../Images/image1.jpg"
 import img2 from "../Images/image2.jpg"
 import img3 from "../Images/image3.jpg"
+import "../App.css"
 
 
 function Bloadcast() {

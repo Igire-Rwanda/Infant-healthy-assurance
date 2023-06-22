@@ -4,12 +4,13 @@ import Typewriter from "typewriter-effect";
 import HomeImage from "../Images/pexels-hillary-disantos-9224346-removebg-preview.png";
 import { useState, useEffect, useRef } from "react";
 import pregnanticon from "../Images/pregnanticon.png";
-import fetus from "../Images/🦆 icon _Fetus_.png";
-import child from "../Images/🦆 icon _Baby 2-3 Months_.png";
+import fetus from "../Images/fetus.png";
+import child from "../Images/baby.png";
 import meter from "../Images/Doctormeter.png";
 import calendar from "../Images/calendar.png";
 import tips from "../Images/tips.png";
 import "../Components/Header/header.css";
+import {Link } from "react-router-dom"
 
 function HomeIndex() {
   const [shouldAnimate, setShouldAnimate] = useState(true);
@@ -230,6 +231,7 @@ function HomeIndex() {
       <div id="home-footer">
         <div id="home-footer-second">
           <p>Copyright 2023 - MamaCare. All rights reserved</p>
+       
         </div>
         <div id="home-footer-first">
           <div className="logo-back-to-top">
@@ -238,6 +240,9 @@ function HomeIndex() {
                 Mama<span>Care</span>
               </a>
             </h4>
+             <div paddingBottom="10px">
+              <Link to="/login">Doctor login</Link>
+            </div>
           </div>
         </div>
       </div>
