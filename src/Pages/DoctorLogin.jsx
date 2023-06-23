@@ -41,17 +41,15 @@ function DoctorLogin() {
           body: JSON.stringify(formValues),
         }
       );
-
       if (!response.ok) {
         throw new Error("failed to save data");
       } else {
         toast("successfully login");
         alert("successfully login");
       }
-      const token = await response.json("");
-      const tokens = await token.token;
+      const Token = await response.json("");
+      const tokens = await Token.token;
       localStorage.setItem("tokens", tokens);
-
       const decode = jwt_decode(tokens);
       const docta = await decode.role;
 
