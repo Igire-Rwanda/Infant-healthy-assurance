@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Doctordashboard from "./Pages/Doctordashboard";
 import Healthcare from "./Pages/Healthcare";
-import Registration from "./Pages/register";
+import Registration from "./Pages/register.jsx";
 import Healthinfo from './Pages/Healthinfo';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
