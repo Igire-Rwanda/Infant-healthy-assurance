@@ -17,7 +17,7 @@ function SideMenu() {
         <Oneforprop icon={icon1} name="Home" link="/" />
         <Oneforprop icon={icon2} name="Broadcast" link="/broadcast" />
         <Oneforprop icon={icon3} name="Registration" link="/register" />
-        <Oneforprop icon={icon4} name="Appointment" link="/appointment" />
+        <Oneforprop icon={icon4} name="Appointment" link="/appointments" />
         <Oneforprop icon={icon7} name="Notification" link="/notification" />
         <Oneforprop icon={icon5} name="Heathcare" link="/healthcare" />
       </div>
