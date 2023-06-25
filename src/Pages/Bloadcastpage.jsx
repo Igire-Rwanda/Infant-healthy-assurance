@@ -92,4 +92,4 @@ function Bloadcast() {
         </div>
     )
 }
-export default Bloadcast
+export default Bloadcast;
