@@ -21,3 +21,12 @@
    margin-left: -20px;
    margin-top: 20px;
 }
+#home-footer{
+    display: flex;
+    background-color: white;
+    height: 40px;
+    margin-top: 10px;
+}
+#home-footer-second{
+    margin-left: 20px;
+}
