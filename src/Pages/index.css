@@ -1,0 +1,242 @@
+#home {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+#home-header {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+#home-logo {
+  color: #a3d8a5;
+  margin-left: 10px;
+  margin-top: 15px;
+  font-size: 17px;
+}
+#home-logo span {
+  color: black;
+  font-family: "Mr Dafoe", cursive;
+  font-size: 32px;
+}
+#home-login button {
+  border: 2px solid #a3d8a5;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 10px 40px;
+  margin: 10px 30px 0 0;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+}
+#home-body-part1 {
+  background-color: rgba(163, 216, 165, 0.34);
+  height: 500px;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 100px;
+}
+#img-background {
+  background-color: #a3d8a5;
+  width: 350px;
+  margin: 100px 0 0 50px;
+  height: 350px;
+  border-radius: 50px;
+}
+#home-image img {
+  height: 410px;
+  position: absolute;
+  left: 80px;
+  transform: translate(0%,10%);
+}
+#home-intro {
+  display: flex;
+  justify-content: center;
+ padding-top: 50px;
+}
+
+
+#home-intro h4 {
+  font-size: 20px;
+  color: rgb(133, 132, 132);
+  width: 420px;
+  text-align: start;
+  
+}
+#home-intro h4 span{
+  color: #a3d8a5;
+}
+#home-intro p {
+  font-size: 17px;
+  color: black;
+  text-align: start;
+  margin-top: 30px;
+  width: 450px;
+  /* letter-spacing: 1px; */
+}
+/* .logo-proto {
+  color: #a3d8a5;
+} */
+.logo-proto span {
+  color: black;
+  font-family: "Mr Dafoe", cursive;
+  font-size: 28px;
+}
+/* #home-body-part2 {
+  display: block;
+} */
+#home-body-part2 h3{
+  text-align: start;
+  display: flex;
+  justify-content: center;
+ padding: 30px 0;
+}
+#home-body-part2 p {
+  text-align: start;
+ padding-left: 16%;
+  width: 78%;
+}
+.home-color {
+  color: #a3d8a5;
+}
+#home-circles {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.home-circle {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(163, 216, 165, 0.34);
+  border-radius: 50%;
+  margin: 0px 0 0 50px;
+}
+.horizontal {
+  width: 200px;
+  padding: 100px 0 0 50px;
+}
+.full-circle h3 {
+  padding-left: 50px;
+}
+
+#home-body-part3 {
+  background-color: rgba(163, 216, 165, 0.34);
+}
+
+#home-cards {
+  display: flex;
+  margin-left: 80px;
+  gap: 50px;
+}
+.home-card {
+  width: 300px;
+  height: 450px;
+  background-color: white;
+  margin: 70px 0 50px 50px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 3px 3px rgba(128, 128, 128, 0.452);
+}
+.home-card .small-circle {
+  width: 130px;
+  height: 130px;
+  background-color: rgba(163, 216, 165, 0.34);
+  margin: 30px 0 0 90px;
+  border-radius: 50%;
+}
+.home-card:hover {
+  transform: translate(5px, -5px);
+}
+.the-small-circle h3 {
+  margin: 30px 0;
+  padding-left: 10px;
+}
+.the-small-circle p {
+  padding: 0px 30px 30px 30px;
+}
+#home-footer {
+  background-color: rgba(163, 216, 165, 0.34);
+  height: 40vh;
+  /* display: grid;
+  grid-template-columns: 0.3fr 0.8fr; */
+}
+#home-footer-first {
+  margin-top: -25px;
+  margin-left: 800px;
+}
+#home-footer-second {
+  font-size: 15px;
+}
+.logo-proto a {
+  color: #a3d8a5;
+  text-decoration: none;
+}
+.logo-proto a span {
+  color: black;
+  font-family: "Mr Dafoe", cursive;
+  font-size: 28px;
+}
+
+.pregnanticon1 img {
+  width: 80px;
+  height: 120px;
+  margin-top: 40px;
+}
+.fetus img {
+  width: 120px;
+  height: 120px;
+  margin-top: 40px;
+}
+.toddler img {
+  width: 80px;
+  height: 120px;
+  margin-top: 40px;
+}
+.calendar img {
+  width: 60px;
+  height: 60px;
+  margin: 35px 0 0 10px;
+}
+.meter img {
+  width: 60px;
+  height: 60px;
+  margin: 35px 0 0 10px;
+}
+.tips img {
+  width: 40px;
+  height: 45px;
+  margin: 40px 0 0 0px;
+}
+.logo-back-to-top{
+  background-color: white;
+  display: flex;
+  width: 600px;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+margin-left: -410px;
+height: 20vh;
+border-radius: 17px;
+border: 2px solid #a3d8a5;
+box-shadow: 6px 6px 0 0 #a3d8a5;
+position: absolute;
+margin-top: -30px;
+}
+.logo-back-to-top h3{
+  width: 300px;
+  text-align: start;
+}
+.homespace{
+  content: '';
+  position: relative;
+  background-color: white;
+  height: 30vh;
+  width: 100%;
+}
+.homebutton button{
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 2.5px solid #a3d8a5;
+  padding:  12px 20px;
+  color: #80ac81;
+  
+}
