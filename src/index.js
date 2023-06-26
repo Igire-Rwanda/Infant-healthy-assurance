@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Doctordashboard from './Pages/Doctordashboard';
 import Healthcare from './Pages/Healthcare';
+import Notification from './Pages/Notification';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router=createBrowserRouter([
@@ -20,6 +21,10 @@ const router=createBrowserRouter([
   {
     path:"/healthcare",
     element:<Healthcare/>
+  },
+  {
+   path:"/notification",
+   element:<Notification/>
   }
 ])
 root.render(

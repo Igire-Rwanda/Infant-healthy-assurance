@@ -1,0 +1,15 @@
+.isUnread{
+    width: 13px;
+    height:13px;
+    background-color:red;
+    border-radius: 100vmax;
+    display :block;
+}
+.container{
+background-color: aquamarine;
+
+}
+src{
+    height:20px;
+    width:20px;
+}
