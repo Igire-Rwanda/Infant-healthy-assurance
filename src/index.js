@@ -6,8 +6,8 @@ import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Doctordashboard from "./Pages/Doctordashboard";
 import Healthcare from "./Pages/Healthcare";
-import Registration from "./Pages/register";
-import Healthinfo from "./Pages/Healthinfo";
+import Registration from "./Pages/register.jsx";
+import Healthinfo from './Pages/Healthinfo';
 import Highlightspage from "./Pages/Bloadcastpage"
 import Page2 from "./Components/Bloadcast-page/page2"
 import Appointments from "./Pages/Appointment";

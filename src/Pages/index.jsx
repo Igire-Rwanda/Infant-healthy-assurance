@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 import Typewriter from "typewriter-effect";
-import HomeImage from "../Images/pexels-hillary-disantos-9224346-removebg-preview.png";
+// import HomeImage from "../Images/pexels-hillary-disantos-9224346-removebg-preview.png";
 import { useState, useEffect, useRef } from "react";
 import pregnanticon from "../Images/pregnanticon.png";
 import fetus from "../Images/fetus.png";
@@ -10,6 +10,7 @@ import meter from "../Images/Doctormeter.png";
 import calendar from "../Images/calendar.png";
 import tips from "../Images/tips.png";
 import "../Components/Header/header.css";
+import Image from '../Images/Maternity_.png'
 import {Link } from "react-router-dom"
 
 function HomeIndex() {
@@ -36,46 +37,39 @@ function HomeIndex() {
           <div className="pregnantico">
             <img src={pregnanticon} alt="" />
           </div>
-          <div id="name-logo">
+          <div id="home-logo">
             <h2>
               Mama<span>Care</span>
             </h2>
           </div>
         </div>
-        <div id="home-login">
+        {/* <div id="home-login">
           <button onClick={ToLogin}>
-            <h3>Log In</h3>
+            Log In 
           </button>
-        </div>
+        </div> */}
       </div>
       <div id="home-body-part1">
         <div id="img-background"></div>
         <div id="home-image">
-          <img src={HomeImage} alt="" />
+          <img src={Image} alt="" />
         </div>
         <div id="home-intro">
-          <h4>
-            Welcome to
-            <br />
-            <h4 className="logo-proto">
-              Mama<span>Care</span>
-            </h4>
-            <br />
-            Your trusted companion on the beautiful journey <br />
-            of motherhood!
-          </h4>
-          <br />
+          <div className="homecenter">
+          <h4 className="h4">Welcome to <span>Mama</span> care,</h4>
+          <h4>your trusted companion on the beautiful journey of motherhood!</h4>
           <p>
             Discover a nurturing space designed exclusively for mothers, where
-            you you can find support,
-            <br />
+            you  can find support,
+            
             information and tools to empower you during this transformative
             time.
-            <br /> Our mission is to provide a comprehensive platform that
+             Our mission is to provide a comprehensive platform that
             caters to your unique needs,
-            <br /> ensuring you and your little one to receive the utmost care
+             ensuring you and your little one to receive the utmost care
             and attention.
           </p>
+        </div>
         </div>
       </div>
       <div id="home-body-part2">
@@ -87,10 +81,10 @@ function HomeIndex() {
         <p>
           We are proud of serving you through your every step of the way
           providing you with
-          <br />
+          
           healthy tips during your preganncy, how to take care of your baby even
           after giving birth
-          <br />
+          
           and connecting you to the doctors.
         </p>
         <div id="home-circles">
@@ -228,24 +222,34 @@ function HomeIndex() {
           </div>
         </div>
       </div>
+
+      <div className="homespace"></div>
+
       <div id="home-footer">
-        <div id="home-footer-second">
-          <p>Copyright 2023 - MamaCare. All rights reserved</p>
-       
-        </div>
         <div id="home-footer-first">
+          <div>
           <div className="logo-back-to-top">
-            <h4 className="logo-proto">
+            
+            {/* <h4 className="logo-proto">
               <a href="#" id="logoBackToTop" onClick={handleBackToTop}>
                 Mama<span>Care</span>
               </a>
-            </h4>
-             <div paddingBottom="10px">
-              <Link to="/login">Doctor login</Link>
+            </h4> */}
+<h3>Got a new mother patient doctor? 
+Get her registered</h3>
+             <div className="homebutton">
+              <Link to="/login"> <button>Doctor login</button> </Link>
             </div>
           </div>
+          </div>
+          
         </div>
+        {/* <div id="home-footer-second">
+          <p>Copyright 2023 - MamaCare. All rights reserved</p>
+       
+        </div> */}
       </div>
+    
     </div>
   );
 }
