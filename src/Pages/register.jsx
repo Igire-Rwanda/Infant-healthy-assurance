@@ -1,19 +1,24 @@
-  import React from "react";
+import React, { useState } from 'react';
 import "./index.css";
 import "./register.css";
 import pregnanticon from "../Images/pregnanticon.png";
 import "../Components/Header/header.css";
 import DoctorImg from "../Images/Doctor-removebg-preview.png";
 
-const Login = () => {
+const Login =() =>{
   const handleBackToTop = (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  const [selectedOption, setSelectedOption] = useState('');
+
+  const handleOptionChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
 
   return (
     <div>
-      <div id="register-sides">
+       <div id="register-sides">
         <div className="register-left-side">
           <div className="header-left">
             <div className="pregnantico">
@@ -97,48 +102,102 @@ const Login = () => {
             <input type="text" className="larger-input" />
             <br />
           </div>
-          <div className="babys-details">
-            <h4>Baby's Details</h4>
-            <label>Full name</label>
-            <br />
-            <input type="text" className="larger-input" />
-            <br />
-            <div className="baby-age-gender">
-              <div id="baby-age">
-                <label>Age</label>
-                <br />
-                <select name="age" className="medium-input" id="age">
-                  <option value="choose">Select the age</option>
-                  <option value="0mon">0 months</option>
-                  <option value="1mon">1 month</option>
-                  <option value="2mon">2 months</option>
-                  <option value="3mon">3 months</option>
-                  <option value="4mon">4 months</option>
-                  <option value="5mon">5 months</option>
-                  <option value="6mon">6 months</option>
-                  <option value="7mon">7 months</option>
-                  <option value="8mon">8 months</option>
-                  <option value="9mon">9 months</option>
-                  <option value="10mon">10 months</option>
-                  <option value="11mon">11 months</option>
-                  <option value="1year">1 year</option>
-                  <option value="2year">2 year</option>
-                </select>
-                <br />
-              </div>
-              <div id="baby-gender">
-                <label>Gender</label>
-                <br />
-                <select name="gender" className="medium-input" id="gender">
-                  <option value="choose">Select baby's gender</option>
-                  <option value="female">Female</option>
-                  <option value="male">Male</option>
-                  <option value="non">Prefer not to reveal</option>
-                </select>
-                <br />
-              </div>
-            </div>
+          <div>
+          <div>
+            <p>are you pregnant?</p>
           </div>
+          </div>
+          <div>
+        <div>
+          <div className="radiosbtn">
+            <input
+              type="radio"
+              name="babysdetails"
+              id="yes"
+              value="yes"
+              checked={selectedOption === 'yes'}
+              onChange={handleOptionChange}
+            />
+            <label htmlFor="yes" className='radio'>Yes</label>
+
+            <input
+              type="radio"
+              name="babysdetails"
+              id="no"
+              value="no"
+              checked={selectedOption === 'no'}
+              onChange={handleOptionChange}
+            />
+            <label htmlFor="no"className='radio'>No</label>
+          </div>
+            {selectedOption === 'yes' ? (
+               <div>
+               <p>how long is have you been pregnant?</p>
+                <select name="age" className="medium-input" id="age">
+                   <option value="choose">Select the time</option>
+                   <option value="0mon">0 months</option>
+                   <option value="1mon">1 month</option>
+                   <option value="2mon">2 months</option>
+                   <option value="3mon">3 months</option>
+                   <option value="4mon">4 months</option>
+                   <option value="5mon">5 months</option>
+                   <option value="6mon">6 months</option>
+                   <option value="7mon">7 months</option>
+                   <option value="8mon">8 months</option>
+                   <option value="9mon">9 months</option>
+                   <option value="10mon">10 months</option>
+                   <option value="11mon">11 months</option>
+                   <option value="1year">1 year</option>
+                   <option value="2year">2 year</option>
+                 </select>
+             </div>
+            ) : selectedOption === 'no' ? (
+             
+              <div><div className="babys-details">
+              <h4>Baby's Details</h4>
+              <label>Full name</label>
+              <br />
+              <input type="text" className="larger-input" />
+              <br />
+              <div className="baby-age-gender">
+                <div id="baby-age">
+                  <label>Age</label>
+                  <br />
+                  <select name="age" className="medium-input" id="age">
+                    <option value="choose">Select the age</option>
+                    <option value="0mon">0 months</option>
+                    <option value="1mon">1 month</option>
+                    <option value="2mon">2 months</option>
+                    <option value="3mon">3 months</option>
+                    <option value="4mon">4 months</option>
+                    <option value="5mon">5 months</option>
+                    <option value="6mon">6 months</option>
+                    <option value="7mon">7 months</option>
+                    <option value="8mon">8 months</option>
+                    <option value="9mon">9 months</option>
+                    <option value="10mon">10 months</option>
+                    <option value="11mon">11 months</option>
+                    <option value="1year">1 year</option>
+                    <option value="2year">2 year</option>
+                  </select>
+                  <br />
+                </div>
+                <div id="baby-gender">
+                  <label>Gender</label>
+                  <br />
+                  <select name="gender" className="medium-input" id="gender">
+                    <option value="choose">Select baby's gender</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="non">Prefer not to reveal</option>
+                  </select>
+                  <br />
+                </div>
+              </div>
+            </div></div>
+            ) : null}
+          </div>
+        </div>
           <div id="submit-login-link">
             <button id="the-register-submit">Submit</button>
             <p className="login-link">
