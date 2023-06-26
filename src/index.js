@@ -11,12 +11,22 @@ import Healthinfo from './Pages/Healthinfo';
 
 import Highlightspage from "./Pages/Bloadcastpage"
 import Page2 from "./Components/Bloadcast-page/page2"
+import DoctorLogin from "./Pages/DoctorLogin";
+import DoctorSignUp from "./Pages/DoctorSignUp";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path:"/login",
+    element:<DoctorLogin/>
+  },
+  {
+    path:"/signup",
+    element:<DoctorSignUp/>
   },
   {
     path: "/dashboard",

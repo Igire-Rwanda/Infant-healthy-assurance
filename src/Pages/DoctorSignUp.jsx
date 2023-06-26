@@ -3,7 +3,7 @@ import icon from "../assets/Images/icon _Pregnant_.png";
 import { Link } from "react-router-dom";
 import "../style/DoctorSignUp.css";
 import React, { useState } from "react";
-import { AiOutlineLock } from "react-icons/ai";
+// import { AiOutlineLock } from "react-icons/ai";
 
 function DoctorSignUp() {
   const realValues = {
@@ -96,7 +96,7 @@ function DoctorSignUp() {
                 <label htmlFor="password">Password</label>
                 <br />
                 <div className="input-cont">
-                  <AiOutlineLock className="ico1" />
+                  {/* <AiOutlineLock className="ico1" /> */}
                   <input
                     type="password"
                     name="password"

@@ -6,6 +6,7 @@ import icon4 from "../../Images/appointments.png";
 import icon5 from "../../Images/healthcare.png";
 import icon7 from "../../Images/bbell.png";
 import Oneforprop from "./Oneforprop.jsx";
+import { Link } from "react-router-dom";
 
 function SideMenu() {
   return (
@@ -22,7 +23,7 @@ function SideMenu() {
         <Oneforprop icon={icon5} name="Heathcare" link="/healthcare" />
       </div>
       <div className="button">
-        <button className="btn">Log out</button>
+        <button className="btn"><Link to="/">Logout</Link></button>
       </div>
     </div>
   );
