@@ -43,11 +43,11 @@ function HomeIndex() {
             </h2>
           </div>
         </div>
-        <div id="home-login">
+        {/* <div id="home-login">
           <button onClick={ToLogin}>
             Log In 
           </button>
-        </div>
+        </div> */}
       </div>
       <div id="home-body-part1">
         <div id="img-background"></div>
