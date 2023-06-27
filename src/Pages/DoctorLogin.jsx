@@ -53,9 +53,6 @@ function DoctorLogin() {
       console.error("An error occurred. Please try again later.", error);
     }
   };
-  const HandleLogin = () => {
-    window.location.href = "/login";
-  };
   return (
     <>
       <div className="all">

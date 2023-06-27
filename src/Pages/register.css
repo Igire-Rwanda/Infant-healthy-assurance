@@ -1,328 +1,95 @@
+.mainContainer {
+  width: 80vw;
+  height: 100vh; /* Set body height to 100% */
+  margin: 0 !important; /* Remove default margin */
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Arrange children vertically */
+}
+
 #register-sides {
+  display: flex;
   font-family: "Poppins", sans-serif;
-  background-color: rgba(163, 216, 165, 0.34);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* background-color: rgba(163, 216, 165, 0.34); */
+  justify-content:center;
+  align-items: center;
 }
-#home-logo {
-  margin-right: 500px;
+
+
+.doctor-image-profile {
+  position: relative;
 }
-#name-logo a {
-  text-decoration: none;
-  color: #a3d8a5;
-}
-.doctor-image-profile img {
-  position: absolute;
-  margin-top: -600px;
-  height: 600px;
-  left: 30px;
-}
+
 .black-background-profile {
   background-color: #3b3a3a;
   width: 400px;
   height: 450px;
   border-radius: 50px;
-  margin: 300px 0 0 90px;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
 }
+
+/* Rest of the CSS code remains the same */
+
+
+#home-logo {
+  margin-right: 20px; /* Adjust the margin as per your needs */
+}
+
+.doctor-image-profile img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+#register-form {
+  background-color: rgba(255, 255, 255, 0.3); /* Adjust transparency as needed */
+  border-radius: 20px; /* Set border radius for curved edges */
+  padding: 20px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); Add a subtle shadow effect */
+  width: min(80%, 600px); /* Set the maximum width to 80% of the parent or 300px, whichever is smaller */
+  height: fit-content; /* Adjust the height based on the content */
+}
+
+
+
+/* Optional: Adjust form field styles */
+#register-form input[type="text"],
+#register-form input[type="email"],
+#register-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#register-form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#register-form button:hover {
+  background-color: #45a049;
+}
+
+
+
 .register-right-side {
   text-align: left;
   margin-top: 50px;
 }
 
-.patients-details h4 {
-  width: 150px;
-  border-bottom: 3px solid #a3d8a5;
-}
-.residence-addresses {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-#register-verify {
-  margin-left: 30px;
-  padding: 10px 30px;
-  background-color: #3b3a3a;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  display: none;
-}
-#register-verify:hover {
-  background-color: #73ee7700;
-  border: 2px solid #3b3a3a;
-  color: #3b3a3a;
-  transform: translate(2px, -2px);
-}
-.register-right-side input {
-  background-color: #b6c0b6;
-  border: none;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-.larger-input {
-  padding: 10px 400px 10px 10px;
-}
-.second-larger-input {
-  padding: 10px 135px;
-}
-.medium-input {
-  padding: 10px 60px 10px 10px;
-}
-.mobile-verify p {
-  font-size: 12px;
-  margin-top: -1px;
-}
-.partners-details h4 {
-  width: 150px;
-  border-bottom: 3px solid #a3d8a5;
-}
-.babys-details h4 {
-  width: 130px;
-  border-bottom: 3px solid #a3d8a5;
-}
-.baby-age-gender {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-#baby-gender{
-  margin-top: 20px;
-}
-#age {
-  border-radius: 10px;
-  border: none;
-  background-color: #b6c0b6;
-  margin-top: 0px;
-}
-#gender {
-  border-radius: 10px;
-  border: none;
-  background-color: #b6c0b6;
-}
-#the-register-submit {
-  padding: 10px 250px;
-  margin-top: 50px;
-  text-align: center;
-  font-weight: bolder;
-  border-radius: 10px;
-  border: none;
-  background-color: #3b3a3a;
-  color: white;
-  font-size: 17px;
-}
-#the-register-submit:hover {
-  background-color: #73ee7700;
-  border: 2px solid #3b3a3a;
-  color: #3b3a3a;
-}
-.login-link a {
-  color: rgb(0, 136, 255);
-}
-#submit-login-link p {
-  margin-bottom: 50px;
-  text-align: center;
-}
-#home-footer-second {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-}
-.radiosbtn input[type="radio"] {
-  display: none;
-}
-
-.radiosbtn label{
-  position: relative;
-  padding-left: 30px;
-  cursor: pointer;
-  margin:0px  20px;
-}
-
-.radiosbtn label:before {
-  position: absolute;
-  content: "";
-  height: 15px;
-  width: 15px;
-  border: 3px solid #3b3a3a;
-  border-radius: 50%;
-  left: 0;
-  top: 2px;
-}
-
-.radiosbtn input[type="radio"]:checked + label:before {
-  height: 16px;
-  width: 16px;
-  border: 2px solid white;
-  border-radius: 10px;
-  background-color: #3b3a3a;
-}
 
 
-@media (max-width: 1024px) {
-  #register-sides {
-    font-size: 12px;
-  }
-  .doctor-image-profile img {
-    height: 500px;
-    margin-top: -500px;
-    left: 0;
-  }
-  .black-background-profile {
-    width: 350px;
-    height: 370px;
-    margin: 300px 0 0 30px;
-  }
-  .patients-details h4 {
-    width: 100px;
-  }
-  .partners-details h4 {
-    width: 100px;
-  }
-  .babys-details h4 {
-    width: 90px;
-  }
-  .register-right-side input {
-    margin-bottom: 10px;
-  }
-  .larger-input {
-    padding: 10px 290px 10px 10px;
-  }
-  .second-larger-input {
-    padding: 10px 80px;
-  }
-  .medium-input {
-    padding: 10px 30px 10px 10px;
-  }
-  #the-register-submit {
-    padding: 10px 190px;
-  }
-  #home-footer {
-    margin-top: 10px;
-    grid-template-columns: 0.5fr 1fr;
-  }
-  #home-footer-second {
-    font-size: 13px;
-  }
-  #home-footer-first {
-    margin-left: 500px;
-  }
-  .register-image-profile {
-    left: 10px;
-  }
-}
-@media (max-width: 929px) and (min-width: 800px) {
-  .pregnantico img {
-    width: 30px;
-    height: 30px;
-  }
-  .doctor-image-profile img {
-    height: 400px;
-    margin-top: -400px;
-    left: 0;
-  }
-  .black-background-profile {
-    width: 300px;
-    height: 350px;
-    margin: 300px 0 0 30px;
-  }
-  .larger-input {
-    padding: 7px 240px 7px 7px;
-  }
-  .second-larger-input {
-    padding: 7px 50px;
-  }
-  .medium-input {
-    padding: 7px 20px 7px 7px;
-  }
-  #register-verify {
-    font-size: 12px;
-    padding: 7px 30px;
-  }
-  #the-register-submit {
-    padding: 7px 170px;
-    font-size: 13px;
-  }
-  .logo-proto {
-    margin-top: 30px;
-  }
-  .logo-proto a {
-    font-size: 15px;
-  }
-  .logo-proto a span {
-    font-size: 15px;
-  }
-  #home-footer {
-    margin-top: 10px;
-    grid-template-columns: 1fr 1fr;
-  }
-  #home-footer-first {
-    margin-left: 300px;
-  }
-}
-@media (max-width: 799px) and (min-width: 715px) {
-  .pregnantico img {
-    width: 30px;
-    height: 30px;
-  }
-  .doctor-image-profile img {
-    height: 350px;
-    margin-top: -350px;
-    left: 0;
-  }
-  .black-background-profile {
-    width: 250px;
-    height: 270px;
-    margin: 300px 0 0 20px;
-  }
-  .larger-input {
-    padding: 5px 200px 5px 5px;
-  }
-  .second-larger-input {
-    padding: 5px 35px;
-  }
-  .medium-input {
-    padding: 5px 10px 5px 5px;
-  }
-  #register-verify {
-    font-size: 12px;
-    border-radius: 5px;
-    padding: 5px 30px;
-  }
-  #the-register-submit {
-    border-radius: 5px;
-    padding: 5px 150px;
-    font-size: 12px;
-  }
-  .register-right-side input {
-    border-radius: 5px;
-  }
-  #home-footer {
-    margin-top: 10px;
-    grid-template-columns: 1fr 1fr;
-  }
-  #home-footer-first {
-    margin-left: 250px;
-  }
-  .logo-proto {
-    margin-top: 30px;
-  }
-  .logo-proto a {
-    font-size: 15px;
-  }
-  .logo-proto a span {
-    font-size: 15px;
-  }
-  #age {
-    border-radius: 5px;
-  }
-  #gender {
-    border-radius: 5px;
-  }
-}
-@media (max-width: 714px) and (min-width: 680px) {
-  .doctor-image-profile img {
-    display: none;
-  }
+
+
+@media (max-width: 714px){
+  .doctor-image-profile img,
   .black-background-profile {
     display: none;
   }
@@ -330,115 +97,6 @@
     font-size: 13px;
   }
   .register-right-side {
-    left: 0;
     margin-right: 150px;
-  }
-  #home-footer {
-    margin-top: 10px;
-    grid-template-columns: 1fr 1fr;
-  }
-  #home-footer-first {
-    margin-left: 250px;
-  }
-  .logo-proto {
-    margin-top: 30px;
-  }
-  .logo-proto a {
-    font-size: 15px;
-  }
-  .logo-proto a span {
-    font-size: 15px;
-  }
-  .patients-details h4 {
-    width: 110px;
-  }
-  .partners-details h4 {
-    width: 110px;
-  }
-  .babys-details h4 {
-    width: 90px;
-  }
-  .medium-input {
-    padding: 10px 50px 10px 10px;
-  }
-}
-@media (max-width: 679px) and (min-width: 670px) {
-  .doctor-image-profile img {
-    display: none;
-  }
-  .black-background-profile {
-    display: none;
-  }
-  #register-sides {
-    font-size: 13px;
-  }
-  .register-right-side {
-    left: 0;
-    margin-right: 200px;
-  }
-  #home-footer {
-    margin-top: 10px;
-    grid-template-columns: 1fr 1fr;
-  }
-  #home-footer-first {
-    margin-left: 200px;
-  }
-  .logo-proto {
-    margin-top: 30px;
-  }
-  .logo-proto a {
-    font-size: 15px;
-  }
-  .logo-proto a span {
-    font-size: 15px;
-  }
-  .patients-details h4 {
-    width: 110px;
-  }
-  .partners-details h4 {
-    width: 110px;
-  }
-  .babys-details h4 {
-    width: 90px;
-  }
-}
-@media (max-width: 669px) and (min-width: 650px) {
-  .doctor-image-profile img {
-    display: none;
-  }
-  .black-background-profile {
-    display: none;
-  }
-  #register-sides {
-    font-size: 13px;
-  }
-  .register-right-side {
-    left: 0;
-    margin-right: 200px;
-  }
-  #home-footer {
-    margin-top: 10px;
-    grid-template-columns: 1fr 1fr;
-  }
-  #home-footer-first {
-    margin-left: 200px;
-  }
-  .logo-proto {
-    margin-top: 30px;
-  }
-  .logo-proto a {
-    font-size: 15px;
-  }
-  .logo-proto a span {
-    font-size: 15px;
-  }
-  .patients-details h4 {
-    width: 110px;
-  }
-  .partners-details h4 {
-    width: 110px;
-  }
-  .babys-details h4 {
-    width: 90px;
   }
 }
