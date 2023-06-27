@@ -5,17 +5,25 @@ import "../style/login.css";
 import React, { useState } from "react";
 function DoctorLogin() {
   const realValues = {
-    name: "",
+    email: "",
     password: "",
   };
 
   const [formValues, setFormvalues] = useState(realValues);
 
-  const [setSubmited] = useState(false);
+  const [submited, setSubmited] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormvalues({ ...formValues, [name]: value });
+  const handleChangeEmail = (e) => {
+    console.log("target ...", e.target.email);
+    console.log("tagetb...",e.target.value);
+    const { email, value } = e.target;
+    setFormvalues({ ...formValues, "email": value });
+  };
+  const handleChangePassword = (e) => {
+    console.log("target ...", e.target.email);
+    console.log("tagetb...",e.target.value);
+    const { password, value } = e.target;
+    setFormvalues({ ...formValues, "password": value });
   };
 
   const handleLogin = async (e) => {
@@ -26,7 +34,7 @@ function DoctorLogin() {
   const sendData = async () => {
     try {
       const response = await fetch(
-        "http://localhost:3000/api/v1/doctor/login",
+        "http://localhost:3500/api/v1/doctor/login",
         {
           method: "POST",
           headers: {
@@ -65,14 +73,13 @@ function DoctorLogin() {
           <div className="body">
             <h3 className="welcome">Welcome!</h3>
             <form onSubmit={handleLogin}>
-              <label htmlFor="Name">Name</label>
+              <label htmlFor="Email">Email</label>
               <br />
               <input
-                type="text"
-                name="name"
+                type="email"
+                name="email"
                 className="input1"
-                value={realValues.username}
-                onChange={handleChange}
+                onChange={handleChangeEmail}
                 required
               />
               <br />
@@ -81,12 +88,11 @@ function DoctorLogin() {
               <input
                 type="password"
                 name="password"
-                value={realValues.userpassword}
-                onChange={handleChange}
+                onChange={handleChangePassword}
                 required
               />
             </form>
-            <button className="btn-login" onClick={HandleLogin}>
+            <button className="btn-login" onClick={handleLogin}>
               Login
             </button>
           </div>

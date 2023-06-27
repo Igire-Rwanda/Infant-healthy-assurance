@@ -10,16 +10,16 @@ function DoctorSignUp() {
     name: "",
     email: "",
     password: "",
-    role: "",
+    role: "admin",
     healthCenter: "",
   };
   const [formValues, setFormvalues] = useState(realValues);
 
-  const [setSubmited] = useState(false);
+  const [submited, setSubmited] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormvalues({ ...formValues, [name]: value });
+    setFormvalues({ ...formValues, [name]: value, "role":"doctor" });
   };
 
   const handleSign = async (e) => {
@@ -29,9 +29,10 @@ function DoctorSignUp() {
   };
 
   const sendData = async () => {
+    console.log("Received...", formValues);
     try {
       const response = await fetch(
-        "http://localhost:3000/api/v1/doctor-account",
+        "http://localhost:3500/api/v1/doctor-account",
         {
           method: "POST",
           headers: {
@@ -51,7 +52,7 @@ function DoctorSignUp() {
     }
   };
   const handleSignup = () => {
-    window.location.href = "/sign-up";
+    // window.location.href = "/sign-up";
   };
   //
   return (
@@ -117,7 +118,7 @@ function DoctorSignUp() {
                 />
               </div>
             </form>
-            <button className="btn-login" onClick={handleSignup}>
+            <button className="btn-login" onClick={handleSign}>
               Sign Up
             </button>
           </div>
