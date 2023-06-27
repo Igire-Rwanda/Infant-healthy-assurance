@@ -6,20 +6,34 @@ import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Doctordashboard from "./Pages/Doctordashboard";
 import Healthcare from "./Pages/Healthcare";
-import Registration from "./Pages/register";
+import Registration from "./Pages/register.jsx";
 import Healthinfo from './Pages/Healthinfo';
 
 import Highlightspage from "./Pages/Bloadcastpage"
 import BroadcastingPage from "./Pages/BroadcastingPage";
 import Page2 from "./Components/Bloadcast-page/page2"
+
 import Page3 from "./Components/Bloadcast-page/page3";
 import Page4 from "./Components/Bloadcast-page/page4"
+
+import DoctorLogin from "./Pages/DoctorLogin";
+import DoctorSignUp from "./Pages/DoctorSignUp";
+import Broadcast  from ".pages/Broadcast";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path:"/login",
+    element:<DoctorLogin/>
+  },
+  {
+    path:"/signup",
+    element:<DoctorSignUp/>
   },
   {
     path: "/dashboard",
@@ -40,6 +54,10 @@ const router = createBrowserRouter([
   {
     path:"/healthcare",
     element:<Healthinfo/>
+  },
+    {
+    path:"/Broadcast",
+    element:<Broadcast/>
   },
   {
   path:"/highlights",

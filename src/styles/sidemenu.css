@@ -33,19 +33,14 @@
   .body{
     background-color: #a3d8a5;
     height: 89vh;
-    width: 1208px;
-    margin-top: 20px;
-    margin-left: 10px;
+    width: 1208px; 
     display: flex;
     align-items: center;
     justify-content: center;
-  
-    
+    margin-top: 20px;
+    margin-left: 10px;
   }
-  .body h3{
-    text-align: center;
-    
-  }
+ 
   .button{
     margin-left: 30px;
     margin-top: 130px;
@@ -142,20 +137,28 @@
     justify-content: center;
     align-items: center;
   }
-  
-  .content input{
-    outline-style: none;
-    border:none ;
-    padding-bottom: 200px;
-    width: 400px;
+  .content{
+    width: 400px; 
     margin-bottom: 20px;
-    font-size: 15px;
+   
   }
-  .title input{
+  .content textarea{
+    outline-style: none;
+    padding-bottom: 200px;
+    width:400px; 
+    font-size: 15px;
+    border-style: none;
+    border-radius: 6px;
+    font-size: 16px;
+    box-shadow : 1px 2px 2px 3px  rgb(107, 100, 100);
+  }
+  .title textarea{
     border: none;
     margin-right: 20px;
     font-size: 15px;
-
+    border-radius: 6px;
+    box-shadow : 1px 2px 2px 3px  rgb(107, 100, 100);
+    outline: none;
     
   }
   .image{
@@ -167,6 +170,8 @@
     padding: 5px;
     width: 37%;
     margin-bottom: 5%;
+    border-radius: 6px;
+    box-shadow : 1px 2px 2px 3px  rgb(107, 100, 100);
 
   }
   .image p{
@@ -191,11 +196,7 @@
     width: 200px;
     height: 30px;
   }
-  #age{
-    width: 43px;
-    height: 30px;
-
-  }
+  
   .healthbtn{
     background-color: rgb(20, 17, 17);
     padding: 10px;
@@ -204,4 +205,28 @@
     border-radius: 20px;
     color: white;
   }
-  
+  .textarea{
+    overflow-y: hidden;
+  }
+
+  .body h1{
+    color:white;
+    font-size: 3.4em;
+
+  }
+  .body h3{
+    margin-top:-10px;
+    color:#212e21;
+    width:100%;
+    font-family: poppins;
+  }
+ .dashimg img{
+   width: 300px;
+   height: 400px;
+   margin-right: 150px;
+   margin-top: -30px;
+  }
+  .welcomingbody{
+  margin-left: 150px;
+  margin-top: -30px;
+  }
