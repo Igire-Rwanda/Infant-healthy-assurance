@@ -58,7 +58,7 @@ const Broadcasting=()=>{
                 <div className="card-content">
                 <div className="image-wrapper">
                  <img src={Image}/>
-                 <h3>perform physical Exercise</h3>
+                 <h3>Do physical Exercise</h3>
                  <p>Overall health and fitness:Regular<br/>
                   Exercise help a pregnant woman to maintain <br/>
                  And improve their overall health fitness <br/>

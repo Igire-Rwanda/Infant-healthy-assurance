@@ -31,10 +31,12 @@
 .twoupper h6{
     align-items: center;
     text-align: center;
-    color:black;
+    color:white;
+    font-weight: bolder;
     padding-top: 150px;
+    align-items:center;
     font-size: 26px;
-    font-family: poppins sans serif;
+    font-family: Century Gothic;
     text-transform: capitalize;
 
 }
@@ -81,6 +83,7 @@ h3{
     font-size: 24px;
     font-weight: lighter;
     text-decoration: underline;
+    text-underline-offset: 10px;
 }
 .card-content p{
     text-align: center;
@@ -132,3 +135,5 @@ a:hover{
 .endresult{
     /* background: grey; */
 }
+
+/* //responsiveness section */
