@@ -10,7 +10,10 @@ import Registration from "./Pages/register";
 import Healthinfo from './Pages/Healthinfo';
 
 import Highlightspage from "./Pages/Bloadcastpage"
+import BroadcastingPage from "./Pages/BroadcastingPage";
 import Page2 from "./Components/Bloadcast-page/page2"
+import Page3 from "./Components/Bloadcast-page/page3";
+import Page4 from "./Components/Bloadcast-page/page4"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const router = createBrowserRouter([
@@ -31,6 +34,10 @@ const router = createBrowserRouter([
     element:<Healthcare/>
   },
   {
+    path:"/broadcastingPage",
+    element:<BroadcastingPage/>
+  },
+  {
     path:"/healthcare",
     element:<Healthinfo/>
   },
@@ -41,7 +48,16 @@ const router = createBrowserRouter([
 {
   path:"/page2",
   element:<Page2/>
+},
+{
+  path:"/page3",
+  element:<Page3/>
+},
+{
+  path:"/page4",
+  element:<Page4/>
 }
+
 ])
 root.render(
  <RouterProvider router={router}/>

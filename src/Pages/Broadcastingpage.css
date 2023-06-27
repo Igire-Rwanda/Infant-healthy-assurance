@@ -1,113 +1,134 @@
 *{
     margin: 0;
-    padding: 0;
+    padding:0;
     box-sizing: border-box;
 }
-.heading{
+.main-container{
     width: 100%;
-    height:70px;
-    background: rgb(117, 203, 117);
-    /* position:fixed ; */
-}
-.secondcontainer{
-    width: 100%;
-    height: 100vh;
+    height:100vh;
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
     /* background: grey; */
+}
+.one{
+    /* background:yellowgreen; */
+}
+.two{
+    /* background: black; */
+    /* background:rgb(131, 231, 131); */
     display: grid;
-    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 0.5fr 0.6fr;
 }
-.broadleft{
-    background: rgb(117, 203, 117);
-    position: sticky;
-    height: 168vh;
-}
-.broadright{
-    background: white;
-    display: grid;
-    grid-template-rows: 0.5fr 0.5fr;
-}
-a{
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-    padding-left: 10px;
-}
-.upperBroadcast{
-    width: 100%;
-    height: 400px;
-    background-image: url(../Images/image4.png);
+.twoupper{
+    background-image:url(../Images/image4.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    background-position: bottom;
-    /* opacity: 0.7; */
-}
-.opaque{
-    width: 100%;
-    height: 400px;
-    background: black;
-    opacity: .7;
-    margin-top: -1050px;
-    /* margin-bottom:  -200px; */
-  
-}
-.downBroadcast{
-    /* background: blue; */
-    width: 100%;
-    height: 400px;
-    padding-top: 30px;
+    object-fit: cover;
+    opacity: 0.8;
    
 }
-.opaque h1{
-    color: white;
-    font-size: 18px;
-    font-family: poppins sans-serif;
-    text-align: center;
+.twoupper h6{
     align-items: center;
-    padding-top: 200px;
-}
-.downBroadcast h1{
     text-align: center;
     color:black;
-    font-family: poppins sans-serif;
-    font-size: 20px;
-    text-decoration: underline;
-    text-decoration-color: black;
-    text-underline-offset: 5px;
-    margin-top: -90px;
-}
-.child{
- width: 300px;
- height: 370px;
- margin-top: 10px;
- box-shadow: 2px 2px 5px grey;
- border-radius: 20px;
- display: inline-flex;
- margin-left: 30px;
- /* white-space: nowrap; */
- /* background-position: center;
-background-size: contain; 
- background-repeat: no-repeat;
- object-fit: cover;  
-  */
+    padding-top: 150px;
+    font-size: 26px;
+    font-family: poppins sans serif;
+    text-transform: capitalize;
 
 }
-.child img{
+.twolower{
+    /* background: grey; */
+    /* display: inline-flex; */
+}
+h4{
+    color:rgb(131, 231, 131);
+    text-align: center;
+    font-size: 24px;
+    font-weight: lighter;
+    text-decoration: underline;
+    text-decoration-color:rgb(131, 231, 131) ;
+    text-underline-offset: 10px;
+    font-family: poppins sans-serif;
+}
+.card-content{
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px black;
+    background: rgb(131, 231, 131);
+    display: inline-flex;
+    gap: 20px;
+}
+.card-content h3{
+    text-align: center;
+    font-weight: bold;
+}
+    
+
+.card-content img{
     width: 300px;
     height: 200px;
     object-fit: cover;
-    overflow: hidden;
-    margin-left: -60px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
 }
-.child .para{
-    margin: -60px;
-    text-align: start;
+h3{
+    color:black;
+    text-align: center;
+    font-size: 24px;
+    font-weight: lighter;
+    text-decoration: underline;
 }
-.child.info1{
+.card-content p{
+    text-align: center;
+    font-size: 16px;
+    font-family: poppins sans-serif;
+    padding-top: 10px;
+    /* background:rgb(131, 231, 131) ; */
+}
+.card-content button {
     width: 150px;
     height: 30px;
-    background: green;
+    background: black;
     color: white;
-    border: 2px solid black;
+    font-family: poppins sans-serif;
+    font-size: 16px;
+    border-radius: 15px;
+    border: 1px solid black;
 }
-
-
+button:hover{
+    background: transparent;
+    color:black;
+    border: 3px solid black;
+}
+a{
+    text-decoration: none;
+    font-family: poppins sans-serif;
+    color: white;
+}
+a:hover{
+    color:black;
+}
+.result{
+    width: 100%;
+    height: 100px;
+    background: rgb(131, 231, 131);
+    display: grid;
+    grid-template-columns: 0.3fr 0.4fr 0.3fr;
+    justify-content: center;
+    align-items: center;
+}
+.oneresult{
+    /* background: green; */
+}
+.middleresult{
+    /* background: black; */
+    
+   
+}
+.endresult{
+    /* background: grey; */
+}

@@ -1,16 +1,15 @@
 import React from "react"
 import "../../App.css"
-function Page2(){
+function Page3(){
     return(
         <div className="para1">
-            <p>
-            Overall health and fitness:Regular
-                  Exercise help a pregnant woman to maintain <br/>
-                 And improve their overall health fitness <br/>
-                 level, it can contribute to cardiovascular <br/>
-                Endurance,muscular strenght,flexibility and posture<br/><br/>
-                <br/>
-                <br/>
+            <p>Proper fetal Development:<br/>
+                 A balancd diet ensures that the growing <br/>
+                 fetus receives essential nutrients for healty <br/>
+                 Development.it provides the neccessary building <br/>
+                 blocks for the formation of organs,tissues and bones.
+                 <br/>
+                 <br/>
                 help your baby to develop and grow and will help to 
         keep you fit and well. You don't need to go on a special diet, but make 
         sure that you eat a variety of different foods every day in order to get the 
@@ -22,12 +21,12 @@ function Page2(){
         than cutting out all your favourites.</p>
         <br/>
         <br/>
-        Overall health and fitness:Regular
-                  Exercise help a pregnant woman to maintain <br/>
-                 And improve their overall health fitness <br/>
-                 level, it can contribute to cardiovascular <br/>
-                Endurance,muscular strenght,flexibility and posture<br/><br/>
+        A balancd diet ensures that the growing <br/>
+                 fetus receives essential nutrients for healty <br/>
+                 Development.it provides the neccessary building <br/>
+                 blocks for the formation of organs,tissues and bones.
+                 <br/>
         </div>
     )
 }
-export default Page2
+export default Page3;
