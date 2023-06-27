@@ -47,6 +47,7 @@
   border: none;
   border-radius: 10px;
   margin-bottom: 30px;
+  display: none;
 }
 #register-verify:hover {
   background-color: #73ee7700;
@@ -85,10 +86,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+#baby-gender{
+  margin-top: 20px;
+}
 #age {
   border-radius: 10px;
   border: none;
   background-color: #b6c0b6;
+  margin-top: 0px;
 }
 #gender {
   border-radius: 10px;
@@ -122,6 +127,37 @@
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
+.radiosbtn input[type="radio"] {
+  display: none;
+}
+
+.radiosbtn label{
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  margin:0px  20px;
+}
+
+.radiosbtn label:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  border: 3px solid #3b3a3a;
+  border-radius: 50%;
+  left: 0;
+  top: 2px;
+}
+
+.radiosbtn input[type="radio"]:checked + label:before {
+  height: 16px;
+  width: 16px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: #3b3a3a;
+}
+
+
 @media (max-width: 1024px) {
   #register-sides {
     font-size: 12px;

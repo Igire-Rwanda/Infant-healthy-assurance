@@ -1,10 +1,11 @@
 import React from "react";
-import DoctorLayout from "../Layout/DoctorLayout";
 import "../styles/sidemenu.css"
 import img from "../Images/Rectangle 110.png"
+import Header from "../Components/Header/Header";
 export default function Healthcare(){
     return(
-        <DoctorLayout>
+        <>
+            <Header/>
             <div className="hbody">
             <h3>Healthy mother is our priority</h3>
             <div className="hbody2">
@@ -49,6 +50,6 @@ export default function Healthcare(){
                </div>
             </div>
             </div>
-        </DoctorLayout>
+        </>
     )
 }
