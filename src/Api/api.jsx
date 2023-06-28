@@ -57,3 +57,23 @@ export const deleteAppointment = async (appointmentId) => {
     throw error;
   }
   };
+
+
+export const sendBroadcastMessages = async (data) => {
+  try {
+    const response = await fetch(`${BASE_URL}/broadcast/send`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+      window.alert("Broadcast queue is well done!");
+    }
+  } catch (error) {
+    console.log("Error:", error);
+    throw error;
+  }
+};
