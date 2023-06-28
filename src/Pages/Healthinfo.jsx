@@ -82,7 +82,7 @@ export default function Healthinfo(){
                             <textarea className="textarea" placeholder="content"  name="content" value={formvalues.content} onChange={handlechange}></textarea>
                         </div>
                         <div>
-                            <button className="healthbtn" type="submit" >save</button>
+                            <button className="healthbtn" type="submit" >SAVE</button>
                         </div>
                     </form>
                </div>

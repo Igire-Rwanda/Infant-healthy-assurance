@@ -105,4 +105,7 @@
   .healthinfoBody textarea {
     min-height: 200px;
 }
-  
+.healthinfoBody button:hover{
+    background-color: #45a049;
+}
+
