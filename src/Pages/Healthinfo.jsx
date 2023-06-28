@@ -23,7 +23,7 @@ export default function Healthinfo(){
     const sendData = async ()=>{
         try{
             const response = await fetch(
-               "http://localhost:3500/api/v1/healthinfo/create",
+               "https://sore-puce-brown-bear-sock.cyclic.app/api/v1/healthinfo/create",
               {
                  method:"post",
                  headers:{
