@@ -16,3 +16,6 @@
   left: 45%;
   transform: translateY(-100%);
 }
+.signupbody{
+  display: flex;
+}
