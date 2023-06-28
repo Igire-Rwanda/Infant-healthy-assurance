@@ -186,10 +186,10 @@
 .welcomingbody {
   /* margin-left: 150px;
   margin-top: -30px; */
-  margin:auto;
+  /* margin:auto; */
 }
 .welcomingbody h3{
-  width: 700px
+  width: 630px
 }
 
 
@@ -198,6 +198,8 @@
 }
 .dashboardContainer{
   margin:auto;
-  margin-left: 50%;
+  margin-left: 15%;
 }
-
+.body dashboardContainer{
+  height: auto;
+}

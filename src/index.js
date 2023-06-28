@@ -8,10 +8,10 @@ import Doctordashboard from "./Pages/Doctordashboard";
 import Healthcare from "./Pages/Healthcare";
 import Registration from "./Pages/register.jsx";
 import Healthinfo from './Pages/Healthinfo';
-
 import Highlightspage from "./Pages/Bloadcastpage"
 import BroadcastingPage from "./Pages/BroadcastingPage";
 import Page2 from "./Components/Bloadcast-page/page2"
+import Appointments from "./Pages/Appointment";
 
 import Page3 from "./Components/Bloadcast-page/page3";
 import Page4 from "./Components/Bloadcast-page/page4"
@@ -74,8 +74,11 @@ const router = createBrowserRouter([
 {
   path:"/page4",
   element:<Page4/>
+},
+{
+  path:"/appointments",
+  element:<Appointments/>
 }
-
 ])
 root.render(
  <RouterProvider router={router}/>
