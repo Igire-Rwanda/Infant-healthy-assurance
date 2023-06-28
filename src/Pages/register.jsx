@@ -94,8 +94,7 @@ const MotherRegistration = () => {
                   />
                   <br />
                   <div className="mobile-verify">
-                    <label>Mobile number</label>
-                    <p>(ID number will be sent to this phone number)</p>
+                    <label>Mobile number <span>(Rwandan phone number)</span></label>
                     <input
                       type="text"
                       className="second-larger-input"
@@ -104,8 +103,7 @@ const MotherRegistration = () => {
                       onChange={handlechange}
                     />
                     <br />
-                    <label>Patient's ID</label>
-                    <p>(Enter the ID number sent on your mobile phone)</p>
+                    <label>Patient's ID <span>(Rwandan ID)</span></label>
                     <input
                       type="text"
                       className="second-larger-input"

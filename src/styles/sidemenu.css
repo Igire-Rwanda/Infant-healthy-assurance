@@ -80,12 +80,12 @@
 .body {
   /* background-color: #a3d8a5; */
   height: 89vh;
-  width: 100%;
+  width: 80vw;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 10%;
 }
 
 .upperpart img {
@@ -184,9 +184,14 @@
 }
 
 .welcomingbody {
-  margin-left: 150px;
-  margin-top: -30px;
+  /* margin-left: 150px;
+  margin-top: -30px; */
+  margin:auto;
 }
+.welcomingbody h3{
+  width: 700px
+}
+
 
 .welcomingbody h1 {
   color: green;

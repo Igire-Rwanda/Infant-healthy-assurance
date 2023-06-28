@@ -26,7 +26,6 @@
 }
 h4{ 
   /* border: 1px solid red; */
-  color: #a3d8a5; 
   font-family: 'IBM plex sans hebreux';
   margin-top: 8px;
   
@@ -139,9 +138,9 @@ h4{
   /* background:yellowgreen */
 }
 .onefordroit{
-  background: #a3d8a5;
+  /* background: #a3d8a5; */
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   display: flex;
 }
 .rightcontent{
@@ -154,45 +153,51 @@ h4{
 
 }
 .choiceone{
-  width:250px;
-  height:40px;
+  width:100%;
   display: flex;
-  gap:10px;
+  flex-direction: column;
+}
+.choiceone select{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size:15px;
+  height:auto;
 }
 .textareacontainer{
-  width:auto;
+  width: 500px;
   height:300px;
   /* background: red; */
-  display: block;
+  display: flex;
+  flex-direction: column;
   /* justify-content: center; */
 
   /* align-items: center; */
 }
 .textareacontainer textarea{
-  width:400px;
-  height:170px;
-  border-radius: 10px;
-  margin-top: 40px;
-}
-#btnforsend{
-width:130px;
-height:30px;
-background: black;
-color:white;
-font-family: poppins sans-serif;
-border-radius:20px;
-place-items: center;
+  width:100%;
+  min-height:170px;
+  padding:12px;
+  margin-bottom: 20px;
 
 }
-a{
-  text-decoration: none;
-  color:white;
-  font-family: poppins san serif;
-  font-size:16px;
+#btnforsend{
+  width:100%;
+  padding:12px;
+  background-color: #a3d8a5 ;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'poppins' sans-serif;
+  place-items: center;
+  border: none;
 }
-a:hover{
-  color:white;
+#btnforsend:hover{
+  background-color:#a3d8a5;
+  border: none;
+  cursor:pointer;
 }
+
 
 
 
