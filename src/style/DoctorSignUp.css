@@ -1,18 +1,35 @@
-.input-cont {
-  position: relative;
+.right-sign {
+  /* border: 1px solid green; */
+  margin-top: 9%;
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.ico1 {
-  position: absolute;
-  top: 35%;
-  left: 45%;
-  transform: translateY(-100%);
+.bodie {
+  /* border: 1px solid gray; */
+  width: 40vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 5px;
 }
-.input-cont2 {
-  position: relative;
+.form-sign {
+  /* border: 1px solid green; */
+  width: 60%;
 }
-.ico2 {
-  position: absolute;
-  top: 35%;
-  left: 45%;
-  transform: translateY(-100%);
+.form-sign input {
+  width: 100%;
+  height: 25px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 0;
+}
+.welcome-sign {
+  /* border: 1px solid green; */
+  margin-bottom: 15px;
 }

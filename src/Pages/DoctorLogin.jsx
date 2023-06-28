@@ -15,15 +15,15 @@ function DoctorLogin() {
 
   const handleChangeEmail = (e) => {
     console.log("target ...", e.target.email);
-    console.log("tagetb...",e.target.value);
+    console.log("tagetb...", e.target.value);
     const { email, value } = e.target;
-    setFormvalues({ ...formValues, "email": value });
+    setFormvalues({ ...formValues, email: value });
   };
   const handleChangePassword = (e) => {
     console.log("target ...", e.target.email);
-    console.log("tagetb...",e.target.value);
+    console.log("tagetb...", e.target.value);
     const { password, value } = e.target;
-    setFormvalues({ ...formValues, "password": value });
+    setFormvalues({ ...formValues, password: value });
   };
 
   const handleLogin = async (e) => {
@@ -68,8 +68,7 @@ function DoctorLogin() {
         </div>
         <div className="right">
           <div className="body">
-            <h3 className="welcome">Welcome!</h3>
-            <form onSubmit={handleLogin}>
+            <form onSubmit={handleLogin} className="form">
               <label htmlFor="Email">Email</label>
               <br />
               <input
@@ -87,21 +86,23 @@ function DoctorLogin() {
                 name="password"
                 onChange={handleChangePassword}
                 required
+                className="input1"
               />
             </form>
+            <br />
             <button className="btn-login" onClick={handleLogin}>
               Login
             </button>
           </div>
           <p>
             Forget Password?
-            <Link to="/sign-up" className="link">
+            <Link to="/signup" className="link">
               Click here
             </Link>
           </p>
           <p>
             Don't have an account?
-            <Link to="/sign-up" className="link">
+            <Link to="/signup" className="link">
               Sign Up Now
             </Link>
           </p>

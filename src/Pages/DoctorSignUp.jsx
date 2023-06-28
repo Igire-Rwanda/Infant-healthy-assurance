@@ -3,7 +3,6 @@ import icon from "../assets/Images/icon _Pregnant_.png";
 import { Link } from "react-router-dom";
 import "../style/DoctorSignUp.css";
 import React, { useState } from "react";
-// import { AiOutlineLock } from "react-icons/ai";
 
 function DoctorSignUp() {
   const realValues = {
@@ -19,7 +18,7 @@ function DoctorSignUp() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormvalues({ ...formValues, [name]: value, "role":"doctor" });
+    setFormvalues({ ...formValues, [name]: value, role: "doctor" });
   };
 
   const handleSign = async (e) => {
@@ -68,16 +67,15 @@ function DoctorSignUp() {
           <img src={img} alt="" className="img" />
           <div className="overlay"></div>
         </div>
-        <div className="right">
-          <div className="body">
-            <h3 className="welcome">Welcome!</h3>
-            <form onSubmit={handleSign}>
+        <div className="right-sign">
+          <div className="bodie">
+            <h3 className="welcome-sign">Welcome!</h3>
+            <form onSubmit={handleSign} className="form-sign">
               <label htmlFor="Name">Name</label>
               <br />
               <input
                 type="text"
                 name="name"
-                className="input1"
                 value={realValues.username}
                 onChange={handleChange}
                 required
@@ -96,16 +94,13 @@ function DoctorSignUp() {
               <div className="two-inputs">
                 <label htmlFor="password">Password</label>
                 <br />
-                <div className="input-cont">
-                  {/* <AiOutlineLock className="ico1" /> */}
-                  <input
-                    type="password"
-                    name="password"
-                    value={realValues.userpassword}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
+                <input
+                  type="password"
+                  name="password"
+                  value={realValues.userpassword}
+                  onChange={handleChange}
+                  required
+                />
                 <br />
                 <label htmlFor="text">health Center</label>
                 <br />
