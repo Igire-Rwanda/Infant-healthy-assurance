@@ -4,6 +4,7 @@ import Home from "../../Pages/index";
 import Register from "../../Pages/register";
 import BroadcastingPage from "../../Pages/BroadcastingPage";
 import Page3 from "../Bloadcast-page/page3";
+import Appointment from "../../Pages/Appointment";
 
 function Index() {
   return (

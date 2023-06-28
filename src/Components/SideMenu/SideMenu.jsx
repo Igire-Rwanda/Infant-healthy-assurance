@@ -19,7 +19,7 @@ function SideMenu() {
         <SideElement icon={icon1} name="Home" link="/dashboard" />
         <SideElement icon={icon2} name="Broadcast" link="/broadcast" />
         <SideElement icon={icon3} name="Registration" link="/register" />
-        <SideElement icon={icon4} name="Appointment" link="/appointment" />
+        <SideElement icon={icon4} name="Appointment" link="/appointments" />
         <SideElement icon={icon7} name="Notification" link="/notification" />
         <SideElement icon={icon5} name="Healthcare" link="/healthcare" />
       </div>

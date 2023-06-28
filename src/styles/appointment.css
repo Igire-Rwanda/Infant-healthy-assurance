@@ -1,0 +1,61 @@
+.body{
+    position: absolute;
+    top: 77px;
+    left: 150px;
+}
+
+.body h2{
+    position: absolute;
+    top: 10px;
+    margin: auto;
+}
+
+.appointmentContainer form{
+    position: absolute;
+    /* top: 80px;  */
+    font-size: 20px;
+    border: 2px solid grey;
+    /* padding: 80px; */
+    background-color: white;
+    border: none;
+    border-radius: 2px;
+    width: 500px;
+}
+.appointmentContainer form input[type=text], .appointmentContainer form input[type=date]{
+    width: 100%;
+    border: 1px solid;
+    padding: 10px;
+    border-radius:0px;
+    height: auto;
+
+
+}
+
+.appointmentContainer form :nth-child(1){
+    margin-bottom: 20px;
+
+}
+
+.appointmentContainer form :nth-child(2){
+    margin-bottom: 20px;
+}
+
+.appointmentContainer form :nth-child(3){
+    margin-bottom: 20px;
+}
+
+
+.btn{
+    padding: 10px;
+    text-align: center;
+    background-color:  #a3d8a5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px; 
+    width: 100%;
+}
+
+button:hover{
+    opacity: 0.5;
+}
