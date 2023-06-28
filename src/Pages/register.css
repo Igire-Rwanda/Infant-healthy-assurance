@@ -86,9 +86,20 @@
   text-align: left;
   margin-top: 50px;
 }
-
-
-
+#submit-login-link{
+  margin-top: 20px;
+}
+select{
+  width: 150px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 7px;
+}
+.radiosbtn{
+  margin-top: 20px;
+  padding-right: 40px;
+  margin-bottom: 20px;
+}
 
 
 @media (max-width: 714px){

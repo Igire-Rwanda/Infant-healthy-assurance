@@ -14,9 +14,9 @@ function Header(){
                   </h2>
                 </div>
             </div>
-            <div className="header-right">
+            {/* <div className="header-right">
               <img src={notification} alt=""/>
-            </div>
+            </div> */}
         </div>
     )
 }

@@ -264,10 +264,6 @@ const MotherRegistration = () => {
                           <option value="7mon">7 months</option>
                           <option value="8mon">8 months</option>
                           <option value="9mon">9 months</option>
-                          <option value="10mon">10 months</option>
-                          <option value="11mon">11 months</option>
-                          <option value="1year">1 year</option>
-                          <option value="2year">2 year</option>
                         </select>
                       </div>
                     ) : selectedOption === "no" ? (
@@ -338,9 +334,9 @@ const MotherRegistration = () => {
                 </div>
                 <div id="submit-login-link">
                   <button id="the-register-submit">Submit</button>
-                  <p className="login-link">
+                  {/* <p className="login-link">
                     Already registered? <a href="/login">Login here</a>
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </form>
