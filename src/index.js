@@ -18,7 +18,7 @@ import Page4 from "./Components/Bloadcast-page/page4"
 
 import DoctorLogin from "./Pages/DoctorLogin";
 import DoctorSignUp from "./Pages/DoctorSignUp";
-import Broadcast  from ".pages/Broadcast";
+import Broadcast  from "./Pages/Broadcast.jsx";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
