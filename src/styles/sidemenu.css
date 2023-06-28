@@ -196,3 +196,7 @@
 .welcomingbody h1 {
   color: green;
 }
+.dashboardContainer{
+  margin:auto;
+  margin-left: 50%;
+}
