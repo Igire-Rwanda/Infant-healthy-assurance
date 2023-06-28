@@ -103,7 +103,6 @@ const MotherRegistration = () => {
                       value={formvalues.motherTel}
                       onChange={handlechange}
                     />
-                    <button id="register-verify">VERIFY</button>
                     <br />
                     <label>Patient's ID</label>
                     <p>(Enter the ID number sent on your mobile phone)</p>

@@ -1,9 +1,12 @@
 .sideMenuContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
-  height: 98vh;
+  height: 100vh;
   width: 200px;
-  background-color: rgb(163, 216, 165, 24%);
+  background-color: rgba(163, 216, 165, 0.24);
   padding: 20px;
 }
 
@@ -70,123 +73,121 @@
   box-shadow: 0 0 0 2px #81c985;
 }
 
-  .contentContainer {
-    display: flex;
-  }
-  
-  .body {
-    /* background-color: #a3d8a5; */
-    height: 89vh;
-    width: 1208px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    margin-left: 10px;
-  }
-  
-  .upperpart img {
-    width: 70%;
-    height: 35vh;
-    margin-top: 20px;
-  }
-  
-  .upperpart {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .hbody {
-    background-color: #a3d8a5;
-    height: 110vh;
-    width: 1188px;
-    margin-top: 20px;
-    margin-left: 10px;
-  }
-  
-  .lowerpart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 140px;
-  }
-  
-  .hbtn {
-    border: 2px solid #a3d8a5;
-    padding: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 20px;
-  }
-  
-  .btn1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .hbody h3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .hbody2 {
-    background-color: white;
-    width: 80%;
-    margin-left: 120px;
-    height: 90%;
-  }
-  
-  .mama,
-  .baby {
-    background-color: #a3d8a5;
-    width: 300px;
-  }
-  
-  .mama {
-    margin-top: 40px;
-  }
-  
-  .baby h5,
-  .mama h5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .baby p,
-  .mama p {
-    margin-left: 20px;
-  }
-  
-  .body h1 {
-    color: white;
-    font-size: 3.4em;
-  }
-  
-  .body h3 {
-    margin-top: -10px;
-    color: #212e21;
-    width: 100%;
-    font-family: poppins;
-  }
-  
-  .dashimg img {
-    width: 300px;
-    height: 400px;
-    margin-right: 150px;
-    margin-top: -30px;
-  }
-  
-  .welcomingbody {
-    margin-left: 150px;
-    margin-top: -30px;
-  }
-  .welcomingbody h1{
-    color: green;
-  }
-  
-  /* Add your other CSS styles below */
-  
+.contentContainer {
+  display: flex;
+}
+
+.body {
+  /* background-color: #a3d8a5; */
+  height: 89vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.upperpart img {
+  width: 70%;
+  height: 35vh;
+  margin-top: 20px;
+}
+
+.upperpart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hbody {
+  background-color: #a3d8a5;
+  height: 110vh;
+  width: 1188px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.lowerpart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 140px;
+}
+
+.hbtn {
+  border: 2px solid #a3d8a5;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+}
+
+.btn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hbody h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hbody2 {
+  background-color: white;
+  width: 80%;
+  margin-left: 120px;
+  height: 90%;
+}
+
+.mama,
+.baby {
+  background-color: #a3d8a5;
+  width: 300px;
+}
+
+.mama {
+  margin-top: 40px;
+}
+
+.baby h5,
+.mama h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.baby p,
+.mama p {
+  margin-left: 20px;
+}
+
+.body h1 {
+  color: white;
+  font-size: 3.4em;
+}
+
+.body h3 {
+  margin-top: -10px;
+  color: #212e21;
+  width: 100%;
+  font-family: poppins;
+}
+
+.dashimg img {
+  width: 300px;
+  height: 400px;
+  margin-right: 150px;
+  margin-top: -30px;
+}
+
+.welcomingbody {
+  margin-left: 150px;
+  margin-top: -30px;
+}
+
+.welcomingbody h1 {
+  color: green;
+}

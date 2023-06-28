@@ -12,6 +12,7 @@
   /* background-color: rgba(163, 216, 165, 0.34); */
   justify-content:center;
   align-items: center;
+  margin-top: 20px;
 }
 
 
@@ -66,11 +67,13 @@
 
 #register-form button {
   background-color: #4caf50;
-  color: white;
+  color: #000;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
+  width: 100%;
+  font-weight: bold;
 }
 
 #register-form button:hover {
