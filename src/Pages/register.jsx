@@ -21,8 +21,8 @@ const MotherRegistration = () => {
     mother: "",
     father: "",
     motherage: "",
-    patientid: "",
-    healthcondition: "",
+    patientId: "",
+    healthCondition: "",
     province: "",
     cell: "",
     sector: "",
@@ -32,7 +32,7 @@ const MotherRegistration = () => {
     faTherTel: "",
     emergencyTel: "",
     dateArrival: "",
-    pregnancyduration: "",
+    pregnancyDuration: "",
     babyname: "",
     babyage: "",
     babygender: "",
@@ -44,14 +44,14 @@ const MotherRegistration = () => {
     setformvalues({ ...formvalues, [name]: value });
   };
   const handleSubmit = async (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     sendData();
     setSubmited(true);
   };
   const sendData = async () => {
     try {
       const response = await fetch(
-        "http://localhost:3500/api/v1/mother/register",
+        "https://sore-puce-brown-bear-sock.cyclic.app/api/v1/mother/register",
         {
           method: "post",
           headers: {
@@ -61,7 +61,8 @@ const MotherRegistration = () => {
         }
       );
       if (response.ok) {
-        window.location.href = "/healthcare";
+        window.alert("The mother has been successfully registered!");
+        window.location.href = "/dashboard";
       } else {
         throw new Error("failed to save data");
         // console.log("error")
@@ -107,8 +108,8 @@ const MotherRegistration = () => {
                     <input
                       type="text"
                       className="second-larger-input"
-                      name="patientid"
-                      value={formvalues.patientid}
+                      name="patientId"
+                      value={formvalues.patientId}
                       onChange={handlechange}
                     />
                   </div>
@@ -118,8 +119,8 @@ const MotherRegistration = () => {
                   <input
                     type="text"
                     className="second-larger-input"
-                    name="healthcondition"
-                    value={formvalues.healthcondition}
+                    name="healthCondition"
+                    value={formvalues.healthCondition}
                     onChange={handlechange}
                   />
                   <br />
@@ -247,23 +248,23 @@ const MotherRegistration = () => {
                       <div>
                         <p>how long is have you been pregnant?</p>
                         <select
-                          name="pregnancyduration"
+                          name="pregnancyDuration"
                           className="medium-input"
                           id="age"
-                          value={formvalues.pregnancyduration}
+                          value={formvalues.pregnancyDuration}
                           onChange={handlechange}
                         >
                           <option value="choose">Select the time</option>
-                          <option value="0mon">0 months</option>
-                          <option value="1mon">1 month</option>
-                          <option value="2mon">2 months</option>
-                          <option value="3mon">3 months</option>
-                          <option value="4mon">4 months</option>
-                          <option value="5mon">5 months</option>
-                          <option value="6mon">6 months</option>
-                          <option value="7mon">7 months</option>
-                          <option value="8mon">8 months</option>
-                          <option value="9mon">9 months</option>
+                          <option value="0">0 months</option>
+                          <option value="1">1 month</option>
+                          <option value="2">2 months</option>
+                          <option value="3">3 months</option>
+                          <option value="4">4 months</option>
+                          <option value="5">5 months</option>
+                          <option value="6">6 months</option>
+                          <option value="7">7 months</option>
+                          <option value="8">8 months</option>
+                          <option value="9">9 months</option>
                         </select>
                       </div>
                     ) : selectedOption === "no" ? (
@@ -292,20 +293,20 @@ const MotherRegistration = () => {
                                 onChange={handlechange}
                               >
                                 <option value="choose">Select the age</option>
-                                <option value="0mon">0 months</option>
-                                <option value="1mon">1 months</option>
-                                <option value="2mon">2 months</option>
-                                <option value="3mon">3 months</option>
-                                <option value="4mon">4 months</option>
-                                <option value="5mon">5 months</option>
-                                <option value="6mon">6 months</option>
-                                <option value="7mon">7 months</option>
-                                <option value="8mon">8 months</option>
-                                <option value="9mon">9 months</option>
-                                <option value="10mon">10 months</option>
-                                <option value="11mon">11 months</option>
-                                <option value="1year">1 year</option>
-                                <option value="2year">2 year</option>
+                                <option value="0">0 months</option>
+                                <option value="1">1 months</option>
+                                <option value="2">2 months</option>
+                                <option value="3">3 months</option>
+                                <option value="4">4 months</option>
+                                <option value="5">5 months</option>
+                                <option value="6">6 months</option>
+                                <option value="7">7 months</option>
+                                <option value="8">8 months</option>
+                                <option value="9">9 months</option>
+                                <option value="10">10 months</option>
+                                <option value="11">11 months</option>
+                                <option value="1">1 year</option>
+                                <option value="2">2 year</option>
                               </select>
                               <br />
                             </div>
@@ -333,7 +334,7 @@ const MotherRegistration = () => {
                   </div>
                 </div>
                 <div id="submit-login-link">
-                  <button id="the-register-submit">Submit</button>
+                  <button id="the-register-submit" type="submit">Submit</button>
                   {/* <p className="login-link">
                     Already registered? <a href="/login">Login here</a>
                   </p> */}

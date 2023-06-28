@@ -23,7 +23,7 @@ export default function Healthinfo(){
     const sendData = async ()=>{
         try{
             const response = await fetch(
-               "https://sore-puce-brown-bear-sock.cyclic.app/api/v1/healthinfo/create",
+               "http://localhost:3500/api/v1/healthinfo/create",
               {
                  method:"post",
                  headers:{
@@ -33,7 +33,8 @@ export default function Healthinfo(){
               }  
             );
             if (response.ok){
-                window.location.href="/healthcare";
+                window.alert("Health care information saved succussfully!");
+                window.location.href="/dashboard";
             }else{
                 throw new Error("failed to save data");
             }
