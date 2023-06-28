@@ -64,15 +64,16 @@ function DoctorSignUp() {
             Mama<span>Care</span>
           </h2>
         </div>
+        <div className="signupbody">
         <div className="left">
           <img src={img} alt="" className="img" />
           <div className="overlay"></div>
         </div>
         <div className="right">
           <div className="body">
+          <form onSubmit={handleSign}>
             <h3 className="welcome">Welcome!</h3>
-            <form onSubmit={handleSign}>
-              <label htmlFor="Name">Name</label>
+            <label htmlFor="Name">Name</label>
               <br />
               <input
                 type="text"
@@ -117,24 +118,27 @@ function DoctorSignUp() {
                   required
                 />
               </div>
-            </form>
-            <button className="btn-login" onClick={handleSign}>
+              <button className="btn-login" onClick={handleSign}>
               Sign Up
             </button>
-          </div>
-          <p>
+            {/* <p>
             Forget Password?
             <Link to="/sign-up" className="link">
               Click here
             </Link>
-          </p>
+            </p> */}
           <p>
             Already have an account?
             <Link to="/login" className="link">
               Login
             </Link>
           </p>
+            </form>
+           
+          </div>
+        
         </div>
+      </div>
       </div>
     </>
   );

@@ -62,49 +62,55 @@ function DoctorLogin() {
             Mama<span>Care</span>
           </h2>
         </div>
-        <div className="left">
-          <img src={img} alt="" className="img" />
-          <div className="overlay"></div>
-        </div>
-        <div className="right">
-          <div className="body">
-            <h3 className="welcome">Welcome!</h3>
-            <form onSubmit={handleLogin}>
-              <label htmlFor="Email">Email</label>
-              <br />
-              <input
-                type="email"
-                name="email"
-                className="input1"
-                onChange={handleChangeEmail}
-                required
-              />
-              <br />
-              <label htmlFor="Password">Password</label>
-              <br />
-              <input
-                type="password"
-                name="password"
-                onChange={handleChangePassword}
-                required
-              />
-            </form>
-            <button className="btn-login" onClick={handleLogin}>
-              Login
-            </button>
+        <div className="loginbody">
+          <div className="left">
+            <img src={img} alt="" className="img" />
+            <div className="overlay"></div>
           </div>
-          <p>
-            Forget Password?
-            <Link to="/sign-up" className="link">
-              Click here
-            </Link>
-          </p>
-          <p>
-            Don't have an account?
-            <Link to="/sign-up" className="link">
-              Sign Up Now
-            </Link>
-          </p>
+          <div className="right">
+            <div className="body">
+              <form onSubmit={handleLogin}>
+                <h3 className="welcome">Welcome!</h3>
+                <label htmlFor="Email">Email</label>
+                <br />
+                <input
+                  type="email"
+                  name="email"
+                  className="input1"
+                  onChange={handleChangeEmail}
+                  required
+                />
+                <br />
+                <label htmlFor="Password">Password</label>
+                <br />
+                <input
+                  type="password"
+                  name="password"
+                  onChange={handleChangePassword}
+                  required
+                />
+                <br />
+                <button className="btn-login" onClick={handleLogin}>
+                  Login
+                </button>
+                <div>
+                {/* <p>
+                Forget Password?
+                <Link to="/signup" className="link">
+                  Click here
+                </Link>
+                </p>  */}
+                <p>
+                Don't have an account?
+                <Link to="/signup" className="link">
+                  Sign Up Now
+                </Link>
+                </p>
+              </div>
+              </form>
+              
+            </div>
+          </div>
         </div>
       </div>
     </>
