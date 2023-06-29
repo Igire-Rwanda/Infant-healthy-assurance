@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "./index.css";
 import "./register.css";
-import pregnanticon from "../Images/pregnanticon.png";
 import "../Components/Header/header.css";
-import DoctorImg from "../Images/Doctor-removebg-preview.png";
 import DoctorLayout from "../Layout/DoctorLayout";
 
 const MotherRegistration = () => {

@@ -203,8 +203,10 @@
   height: 45px;
   margin: 40px 0 0 0px;
 }
-.logo-back-to-top {
-  background-color: white;
+
+.logo-back-to-top{
+  /* background-color: white; */
+
   display: flex;
   width: 600px;
   gap: 60px;

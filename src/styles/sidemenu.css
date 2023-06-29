@@ -6,49 +6,105 @@
   flex-direction: column;
   height: 100vh;
   width: 200px;
-  background-color: rgba(163, 216, 165, 0.24);
+  background-color: #22b42298;
   padding: 20px;
 }
-
+/* .icon{
+  background: none;
+  background-color: #22b42298;
+  
+}
 .icon img {
   width: 30px;
   height: 30px;
-}
+  background-color: #22b42298 ;
+  background: none;
+  /* margin-top: 20px; */
+/* } */
 
-.upper {
+/* .upper {
   margin-bottom: 40px;
-}
-
+} */
+/* 
 .lower {
+  
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  line-height: 40px;
+  line-height: 80px;
+  background: none;
+  /* margin: 20px; */
+  /* gap:20px;
 }
-
+.lower a{
+  background-color: transparent;
+  text-decoration: none;;
+  border: 1px solid red;
+  
+}  */
+/* 
 .icon a {
   text-decoration: none;
   color: inherit;
   display: inline-flex;
   align-items: center;
+  
 }
 
 .icon a img {
   margin-right: 5px;
+  margin-bottom:50px;
 }
 
 .icon a .name {
   text-decoration: none;
   color: inherit;
-}
+} */
+.lower{
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;;
+  gap:40px;
 
+  /* margin:auto; */
+}
+.icon{
+  display:flex;
+  gap:20px;
+  flex-direction: row;
+}
+.iconImg{
+  background-color: #22b42298;
+  width:40px;
+  height:40px;
+}
+.icon div img{
+  width:30px;
+  height:30px;
+  /* background:#22b42298; */
+  padding:0px;
+  /* border-radius: 50%; */
+  /* border:1px solid black; */
+  margin:auto;
+}
+.iconLink{
+  font-weight: 600;
+  /* background:red; */
+  padding:5px;
+  line-height: 1em;;
+  transform: translateX(-20%);
+
+}
 .button {
   margin-top: auto;
 }
 
+
 .btn {
-  background-color: #a3d8a5;
+  background-color: #22b42298;
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
@@ -206,6 +262,8 @@
 .body dashboardContainer {
   height: auto;
 }
-* {
-  overflow: hidden;
+.button .btn {
+  background-color: #22b42298
 }
+
+
