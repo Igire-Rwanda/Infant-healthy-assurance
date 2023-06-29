@@ -24,9 +24,9 @@ function SideMenu() {
         <SideElement icon={icon5} name="Healthcare" link="/healthcare" />
       </div>
       <div className="button">
-        <button className="btn">
-          <Link to="/">Logout</Link>
-        </button>
+        <Link to="/">
+          <button className="btn">Logout</button>
+        </Link>
       </div>
     </div>
   );

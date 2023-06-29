@@ -1,5 +1,5 @@
 #name-logo {
-  color: #a3d8a5;
+  color: #22b42298;
   margin-top: 20px;
   padding-left: 10px;
 }
@@ -27,6 +27,7 @@
   width: 50px;
   height: 60px;
   margin-top: 10px;
+  color: #22b42298;
 }
 
 .header-right img {

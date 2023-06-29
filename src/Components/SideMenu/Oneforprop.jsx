@@ -4,7 +4,10 @@ function Oneforprop(props){
     return(
         <>
           <div className="icon">
-           <Link to={props.link}><img src= {props.icon} alt=""/><span className="name">{props.name}</span></Link>
+         <Link to={props.link}> <div className="iconImg"><img src= {props.icon} alt=""/></div>
+            <div className="iconLink"><span className="name">{props.name}</span></div>
+            
+           </Link>
             </div>
         </>
     )

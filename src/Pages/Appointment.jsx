@@ -10,6 +10,7 @@ const Appointments = () => {
   const [newAppointment, setNewAppointment] = useState({
     doctorname: "",
     description: "",
+    patientId:"",
     appointmentdate: "",
   });
 
@@ -95,6 +96,16 @@ const Appointments = () => {
         </label>
         <br />
         <label>
+          PatientId: <br/>
+          <input
+            type="text"
+            name="patientId"
+            value={newAppointment.patientId}
+            onChange={handleInputChange}
+          />
+        </label>
+        <br />
+        <label>
           Appointment Date: <br/>
           <input
             type="date"
@@ -112,6 +123,7 @@ const Appointments = () => {
             <p>Doctor Name: {appointment.doctorname}</p>
             <p>Description: {appointment.description}</p>
             <p>Appointment Date: {appointment.appointmentdate}</p>
+            <p>patientId: {appointment.patientId}</p>
             <button onClick={() => handleDelete(appointment._id)}>
               Delete
             </button>
