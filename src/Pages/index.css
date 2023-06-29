@@ -46,23 +46,21 @@
   height: 410px;
   position: absolute;
   left: 80px;
-  transform: translate(0%,10%);
+  transform: translate(0%, 10%);
 }
 #home-intro {
   display: flex;
   justify-content: center;
- padding-top: 50px;
+  padding-top: 50px;
 }
-
 
 #home-intro h4 {
   font-size: 20px;
   color: rgb(133, 132, 132);
   width: 420px;
   text-align: start;
-  
 }
-#home-intro h4 span{
+#home-intro h4 span {
   color: #a3d8a5;
 }
 #home-intro p {
@@ -84,15 +82,15 @@
 /* #home-body-part2 {
   display: block;
 } */
-#home-body-part2 h3{
+#home-body-part2 h3 {
   text-align: start;
   display: flex;
   justify-content: center;
- padding: 30px 0;
+  padding: 30px 0;
 }
 #home-body-part2 p {
   text-align: start;
- padding-left: 16%;
+  padding-left: 16%;
   width: 78%;
 }
 .home-color {
@@ -205,38 +203,38 @@
   height: 45px;
   margin: 40px 0 0 0px;
 }
-.logo-back-to-top{
+.logo-back-to-top {
   background-color: white;
   display: flex;
   width: 600px;
   gap: 60px;
   justify-content: center;
   align-items: center;
-margin-left: -410px;
-height: 20vh;
-border-radius: 17px;
-border: 2px solid #a3d8a5;
-box-shadow: 6px 6px 0 0 #a3d8a5;
-position: absolute;
-margin-top: -30px;
+  margin-left: -410px;
+  height: 20vh;
+  border-radius: 17px;
+  border: 2px solid #a3d8a5;
+  box-shadow: 6px 6px 0 0 #a3d8a5;
+  position: absolute;
+  margin-top: -30px;
 }
-.logo-back-to-top h3{
+.logo-back-to-top h3 {
   width: 300px;
   text-align: start;
+  text-decoration: none;
 }
-.homespace{
-  content: '';
+.homespace {
+  content: "";
   position: relative;
   background-color: white;
   height: 30vh;
   width: 100%;
 }
-.homebutton button{
+.homebutton button {
   background-color: white;
   border-radius: 20px;
   cursor: pointer;
   border: 2.5px solid #a3d8a5;
-  padding:  12px 20px;
+  padding: 12px 20px;
   color: #80ac81;
-  
 }
