@@ -245,9 +245,12 @@
   /* margin:auto; */
 }
 .welcomingbody h3{
-  width: 630px
+  width: 630px;
+  text-decoration:none;
 }
-
+.welcomingbody h1{
+  margin-bottom: 20px;
+}
 
 .welcomingbody h1 {
   color: green;

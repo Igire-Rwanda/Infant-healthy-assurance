@@ -1,7 +1,7 @@
-import img from "../assets/Images/Rectangle-189.png";
 import icon from "../assets/Images/icon _Pregnant_.png";
 import { Link } from "react-router-dom";
 import "../style/login.css";
+import doctor from "../Images/doctor.jpg";
 import React, { useState } from "react";
 function DoctorLogin() {
   const realValues = {
@@ -64,7 +64,7 @@ function DoctorLogin() {
         </div>
         <div className="loginbody">
           <div className="left">
-            <img src={img} alt="" className="img" />
+            <img src={doctor} alt="" className="img" />
             <div className="overlay"></div>
           </div>
           <div className="right">

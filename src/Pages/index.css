@@ -100,7 +100,7 @@
 }
 #home-circles {
   display: flex;
-  margin-left: 20px;
+  margin-left: 90px;
   margin-top: 50px;
 }
 .home-circle {
@@ -153,22 +153,27 @@
   padding: 0px 30px 30px 30px;
 }
 #home-footer {
+  /* border: 2px solid red; */
   background-color: rgba(163, 216, 165, 0.34);
-  height: 40vh;
+  height: 30vh;
   /* display: grid;
   grid-template-columns: 0.3fr 0.8fr; */
 }
 #home-footer-first {
+  /* border: 2px solid blue; */
   margin-top: -25px;
   margin-left: 800px;
+  margin-top: 40px;
+  
 }
 #home-footer-second {
   font-size: 15px;
+  /* border: 2px solid red; */
 }
-.logo-proto a {
+/* .logo-proto a {
   color: #a3d8a5;
   text-decoration: none;
-}
+} */
 .logo-proto a span {
   color: black;
   font-family: "Mr Dafoe", cursive;
@@ -206,23 +211,24 @@
   margin: 40px 0 0 0px;
 }
 .logo-back-to-top{
-  /* background-color: white; */
+  background-color: white;
   display: flex;
   width: 600px;
   gap: 60px;
   justify-content: center;
   align-items: center;
-margin-left: -410px;
-height: 20vh;
-border-radius: 17px;
-border: 2px solid #a3d8a5;
-box-shadow: 6px 6px 0 0 #a3d8a5;
-position: absolute;
-margin-top: -30px;
+  margin-left: -410px;
+  height: 20vh;
+  border-radius: 17px;
+  border: 2px solid #a3d8a5;
+  box-shadow: 6px 6px 0 0 #a3d8a5;
+  position: absolute;
+  /* margin-top: -30px; */
 }
 .logo-back-to-top h3{
   width: 300px;
-  text-align: start;
+  text-align: none;
+  text-decoration: none;
 }
 .homespace{
   content: '';
@@ -239,4 +245,15 @@ margin-top: -30px;
   padding:  12px 20px;
   color: #80ac81;
   
+}
+#home-circles h3{
+  text-decoration: none;
+  margin-left: 40px;
+}
+#home-body-part2 h3{
+  text-decoration: none;
+  
+}
+.footerprivacy h4{
+  text-decoration: none;
 }
