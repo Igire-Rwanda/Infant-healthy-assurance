@@ -15,15 +15,15 @@ function DoctorLogin() {
 
   const handleChangeEmail = (e) => {
     console.log("target ...", e.target.email);
-    console.log("tagetb...",e.target.value);
+    console.log("tagetb...", e.target.value);
     const { email, value } = e.target;
-    setFormvalues({ ...formValues, "email": value });
+    setFormvalues({ ...formValues, email: value });
   };
   const handleChangePassword = (e) => {
     console.log("target ...", e.target.email);
-    console.log("tagetb...",e.target.value);
+    console.log("tagetb...", e.target.value);
     const { password, value } = e.target;
-    setFormvalues({ ...formValues, "password": value });
+    setFormvalues({ ...formValues, password: value });
   };
 
   const handleLogin = async (e) => {
@@ -94,21 +94,20 @@ function DoctorLogin() {
                   Login
                 </button>
                 <div>
-                {/* <p>
+                  {/* <p>
                 Forget Password?
                 <Link to="/signup" className="link">
                   Click here
                 </Link>
                 </p>  */}
-                <p>
-                Don't have an account?
-                <Link to="/signup" className="link">
-                  Sign Up Now
-                </Link>
-                </p>
-              </div>
+                  <p>
+                    Don't have an account?
+                    <Link to="/signup" className="link">
+                      Sign Up Now
+                    </Link>
+                  </p>
+                </div>
               </form>
-              
             </div>
           </div>
         </div>

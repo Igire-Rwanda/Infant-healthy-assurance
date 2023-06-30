@@ -19,7 +19,7 @@ function DoctorSignUp() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormvalues({ ...formValues, [name]: value, "role":"doctor" });
+    setFormvalues({ ...formValues, [name]: value, role: "doctor" });
   };
 
   const handleSign = async (e) => {
@@ -65,80 +65,78 @@ function DoctorSignUp() {
           </h2>
         </div>
         <div className="signupbody">
-        <div className="left">
-          <img src={doctor} alt="" className="img" />
-          <div className="overlay"></div>
-        </div>
-        <div className="right">
-          <div className="body">
-          <form onSubmit={handleSign}>
-            <h3 className="welcome">Welcome!</h3>
-            <label htmlFor="Name">Name</label>
-              <br />
-              <input
-                type="text"
-                name="name"
-                className="input1"
-                value={realValues.username}
-                onChange={handleChange}
-                required
-              />
-              <br />
-              <label htmlFor="email">Email Address</label>
-              <br />
-              <input
-                type="email"
-                name="email"
-                value={realValues.useremail}
-                onChange={handleChange}
-                required
-              />
-              <br />
-              <div className="two-inputs">
-                <label htmlFor="password">Password</label>
+          <div className="left">
+            <img src={doctor} alt="" className="img" />
+            <div className="overlay"></div>
+          </div>
+          <div className="right">
+            <div className="body">
+              <form onSubmit={handleSign}>
+                <h3 className="welcome">Welcome!</h3>
+                <label htmlFor="Name">Name</label>
                 <br />
-                <div className="input-cont">
-                  {/* <AiOutlineLock className="ico1" /> */}
+                <input
+                  type="text"
+                  name="name"
+                  className="input1"
+                  value={realValues.username}
+                  onChange={handleChange}
+                  required
+                />
+                <br />
+                <label htmlFor="email">Email Address</label>
+                <br />
+                <input
+                  type="email"
+                  name="email"
+                  value={realValues.useremail}
+                  onChange={handleChange}
+                  required
+                />
+                <br />
+                <div className="two-inputs">
+                  <label htmlFor="password">Password</label>
+                  <br />
+                  <div className="input-cont">
+                    {/* <AiOutlineLock className="ico1" /> */}
+                    <input
+                      type="password"
+                      name="password"
+                      value={realValues.userpassword}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+                  <br />
+                  <label htmlFor="text">health Center</label>
+                  <br />
                   <input
-                    type="password"
-                    name="password"
-                    value={realValues.userpassword}
+                    type="text"
+                    name="healthCenter"
+                    value={realValues.userhealthCenter}
                     onChange={handleChange}
                     required
                   />
                 </div>
-                <br />
-                <label htmlFor="text">health Center</label>
-                <br />
-                <input
-                  type="text"
-                  name="healthCenter"
-                  value={realValues.userhealthCenter}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              <button className="btn-login" onClick={handleSign}>
-              Sign Up
-            </button>
-            {/* <p>
+                <button className="btn-login" onClick={handleSign}>
+                  Sign Up
+                </button>
+                {/* <p>
             Forget Password?
             <Link to="/sign-up" className="link">
               Click here
             </Link>
             </p> */}
-          <p>
-            Already have an account?
-            <Link to="/login" className="link">
-              Login
-            </Link>
-          </p>
-            </form>
-           
+                <p>
+                  Already have an account?
+                  <Link to="/login" className="link">
+                    Login
+                  </Link>
+                </p>
+              </form>
+            </div>
           </div>
-        
         </div>
-      </div>
       </div>
     </>
   );
