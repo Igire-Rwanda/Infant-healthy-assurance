@@ -19,3 +19,15 @@
 .signupbody{
   display: flex;
 }
+.body h3{
+  /* text-decoration-line: none; */
+  margin-left: -65px;
+  margin-bottom: 20px;
+}
+.body input{
+  width: 250px;
+}
+.img{
+  height: 520px;
+  width: 300px;
+}

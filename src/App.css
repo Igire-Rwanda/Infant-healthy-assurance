@@ -125,17 +125,11 @@ h4{
   display:grid;
   grid-template-rows: 0.1fr 0.9fr;
 }
-.oneforhead{
-  /* background:#a3d8a5; */
-}
 .oneforbody{
   /* background:black; */
   height: 88vh;
   display:grid;
   grid-template-columns: 0.2fr 0.8fr;
-}
-.oneforagoche{
-  /* background:yellowgreen */
 }
 .onefordroit{
   /* background: #a3d8a5; */

@@ -223,33 +223,24 @@ function HomeIndex() {
         </div>
       </div>
 
-      <div className="homespace"></div>
+      {/* <div className="homespace"></div> */}
 
       <div id="home-footer">
         <div id="home-footer-first">
-          <div>
-          <div className="logo-back-to-top">
-            
-            {/* <h4 className="logo-proto">
-              <a href="#" id="logoBackToTop" onClick={handleBackToTop}>
-                Mama<span>Care</span>
-              </a>
-            </h4> */}
-<h3>Got a new mother patient doctor? 
-Get her registered</h3>
+         <div className="logo-back-to-top">
+            <h3>Doctor first login to access other features</h3>
              <div className="homebutton">
               <Link to="/login"> <button>Doctor login</button> </Link>
             </div>
           </div>
-          </div>
-          
-        </div>
-        {/* <div id="home-footer-second">
-          <p>Copyright 2023 - MamaCare. All rights reserved</p>
-       
-        </div> */}
+       </div>  
       </div>
-    
+      <div className="footerprivacy">
+      <h4>
+          "At MamaCare, we prioritize the utmost respect for your data and privacy , ensuring secure and confidential handling of all your personal information."
+        </h4>
+      </div>
+     
     </div>
   );
 }

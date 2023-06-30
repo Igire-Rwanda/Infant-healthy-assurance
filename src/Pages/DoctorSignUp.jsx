@@ -1,9 +1,9 @@
-import img from "../Images/the-doctor-removebg (1).png";
 import icon from "../assets/Images/icon _Pregnant_.png";
 import { Link } from "react-router-dom";
 import "../style/DoctorSignUp.css";
 import React, { useState } from "react";
 // import { AiOutlineLock } from "react-icons/ai";
+import doctor from "../Images/doctor.jpg";
 
 function DoctorSignUp() {
   const realValues = {
@@ -66,7 +66,7 @@ function DoctorSignUp() {
         </div>
         <div className="signupbody">
           <div className="left">
-            <img src={img} alt="" className="img" />
+            <img src={doctor} alt="" className="img" />
             <div className="overlay"></div>
           </div>
           <div className="right">
