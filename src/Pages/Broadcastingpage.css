@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.main-container{
+    width: 100%;
+    height:100vh;
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    /* background: grey; */
+}
+.one{
+    /* background:yellowgreen; */
+}
+.two{
+    /* background: black; */
+    /* background:rgb(131, 231, 131); */
+    display: grid;
+    grid-template-rows: 0.5fr 0.6fr;
+}
+.twoupper{
+    background-image:url(../Images/image4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    opacity: 0.8;
+   
+}
+.twoupper h6{
+    align-items: center;
+    text-align: center;
+    color:white;
+    font-weight: bolder;
+    padding-top: 150px;
+    align-items:center;
+    font-size: 26px;
+    font-family: Century Gothic;
+    text-transform: capitalize;
+
+}
+.twolower{
+    /* background: grey; */
+    /* display: inline-flex; */
+}
+h4{
+    text-align: center;
+    font-size: 24px;
+    font-weight: lighter;
+    text-decoration: underline;
+    text-decoration-color:rgb(131, 231, 131) ;
+    text-underline-offset: 10px;
+    font-family: poppins sans-serif;
+}
+.card-content{
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px black;
+    background: rgb(131, 231, 131);
+    display: inline-flex;
+    gap: 20px;
+}
+.card-content h3{
+    text-align: center;
+    font-weight: bold;
+}
+    
+
+.card-content img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+h3{
+    color:black;
+    text-align: center;
+    font-size: 24px;
+    font-weight: lighter;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+.card-content p{
+    text-align: center;
+    font-size: 16px;
+    font-family: poppins sans-serif;
+    padding-top: 10px;
+    /* background:rgb(131, 231, 131) ; */
+}
+.card-content button {
+    width: 150px;
+    height: 30px;
+    background: black;
+    color: white;
+    font-family: poppins sans-serif;
+    font-size: 16px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+button:hover{
+    background: transparent;
+    color:black;
+    border: 3px solid black;
+}
+a{
+    text-decoration: none;
+    font-family: poppins sans-serif;
+}
+a:hover{
+    color:black;
+}
+.result{
+    width: 100%;
+    height: 100px;
+    background: rgb(131, 231, 131);
+    display: grid;
+    grid-template-columns: 0.3fr 0.4fr 0.3fr;
+    justify-content: center;
+    align-items: center;
+}
+.oneresult{
+    /* background: green; */
+}
+.middleresult{
+    /* background: black; */
+    
+   
+}
+.endresult{
+    /* background: grey; */
+}
+
+/* //responsiveness section */

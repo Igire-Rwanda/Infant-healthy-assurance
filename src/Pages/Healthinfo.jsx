@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import DoctorLayout from "../Layout/DoctorLayout";
-import "../styles/sidemenu.css"
-import "../styles/changes.css"
+import "../styles/healthInfo.css"
 export default function Healthinfo(){
     const realvalues={
         category:"",
@@ -34,7 +33,8 @@ export default function Healthinfo(){
               }  
             );
             if (response.ok){
-                window.location.href="/healthcare";
+                window.alert("Health care information saved succussfully!");
+                window.location.href="/dashboard";
             }else{
                 throw new Error("failed to save data");
             }
@@ -51,10 +51,8 @@ export default function Healthinfo(){
                 {/* <pre>{JSON.stringify(formvalues,undefined,2)}</pre> */}
                     <form onSubmit={handleSubmit}>
                         <div className="title">
-                            <textarea placeholder="title" id="titlein" name="title" value={formvalues.title} onChange={handlechange}  ></textarea>
+                            <input type="text" placeholder="title" id="titlein" name="title" value={formvalues.title} onChange={handlechange} />
                             <div id="baby-age">
-                                {/* <label>Age</label>
-                                <br /> */}
                                 <select name="age" className="medium-input" id="healthage">
                                 <option value="choose">Select the age</option>
                                 <option value="0mon">0 months</option>
@@ -85,7 +83,7 @@ export default function Healthinfo(){
                             <textarea className="textarea" placeholder="content"  name="content" value={formvalues.content} onChange={handlechange}></textarea>
                         </div>
                         <div>
-                            <button className="healthbtn" type="submit" >save</button>
+                            <button className="healthbtn" type="submit" >SAVE</button>
                         </div>
                     </form>
                </div>

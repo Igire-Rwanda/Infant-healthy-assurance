@@ -1,0 +1,21 @@
+.input-cont {
+  position: relative;
+}
+.ico1 {
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  transform: translateY(-100%);
+}
+.input-cont2 {
+  position: relative;
+}
+.ico2 {
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  transform: translateY(-100%);
+}
+.signupbody{
+  display: flex;
+}

@@ -5,7 +5,7 @@ import dashpic from "../Images/dashpic.png"
 export default function Doctordashboard(){
     return(
         <DoctorLayout>
-            <div className="body">
+            <div className="body dashboardContainer">
                 <div className="welcomingbody">
                  <h1>Welcome ,</h1>
                  <h3>  esteemed doctors to your dedicated dashboard!

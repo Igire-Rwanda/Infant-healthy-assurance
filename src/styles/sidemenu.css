@@ -1,232 +1,205 @@
-.icon img{
-    width:30px;
-    height:30px;
+.sideMenuContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 200px;
+  background-color: rgba(163, 216, 165, 0.24);
+  padding: 20px;
 }
-.upper{
-    margin-top: 40px;
-    margin-bottom:40px ;
-    margin-left: 20px;
+
+.icon img {
+  width: 30px;
+  height: 30px;
 }
-.lower{
-    margin-left: 20px;
-    line-height: 40px;
+
+.upper {
+  margin-bottom: 40px;
+}
+
+.lower {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 40px;
 }
 
 .icon a {
-    text-decoration: none; 
-    color: inherit; 
-    display: inline-flex;
-    align-items: center;
-  }
-  .icon a img {
-    margin-right: 5px; 
-  }
-  
-  .icon a .name {
-    text-decoration: none;
-    color: inherit; 
-    
-  }
-  .contentContainer{
-    display: flex;
-  }
-  .body{
-    background-color: #a3d8a5;
-    height: 89vh;
-    width: 1208px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    margin-left: 10px;
-  }
- 
-  .button{
-    margin-left: 30px;
-    margin-top: 130px;
-    
-  }
-  .btn{
-    background-color: #a3d8a5;
-    border-style: none;
-    padding: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 20px;
-  }
-  .upperpart img{
-    width: 70%;
-    height: 35vh;
-    margin-top: 20px;
-  }
-  .upperpart{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
+  text-decoration: none;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+}
 
-  .hbody{
-    background-color: #a3d8a5;
-    height: 110vh;
-    width: 1188px;
-    margin-top: 20px;
-    margin-left: 10px;
+.icon a img {
+  margin-right: 5px;
+}
 
-    
-  }
-  .lowerpart{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 140px;
-  }
-  .hbtn{
-    border: 2px solid #a3d8a5 ;
-    padding: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 20px;
-  }
-  .btn1{
-    display: flex;
-    justify-content: center;
-    align-items: center
-  }
-  .hbody h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .hbody2{
-    background-color: white;
-    width: 80%;
-    margin-left: 120px;
-    height: 90%;
-  }
-  .mama, .baby{
-   background-color: #a3d8a5; 
-   width: 300px;
-   
-  }
-  .mama{
-    margin-top:40px ;
-  }
-  .baby h5{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .mama h5{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .baby p, .mama p{
-    margin-left: 20px;
-  }
+.icon a .name {
+  text-decoration: none;
+  color: inherit;
+}
 
+.button {
+  margin-top: auto;
+}
 
-  .healthinfoBody{
-    background-color: #a3d8a5;
-    height: 89vh;
-    width: 1188px;
-    margin-top: 20px;
-    margin-left: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .content{
-    width: 400px; 
-    margin-bottom: 20px;
-   
-  }
-  .content textarea{
-    outline-style: none;
-    padding-bottom: 200px;
-    width:400px; 
-    font-size: 15px;
-    border-style: none;
-    border-radius: 6px;
-    font-size: 16px;
-    box-shadow : 1px 2px 2px 3px  rgb(107, 100, 100);
-  }
-  .title textarea{
-    border: none;
-    margin-right: 20px;
-    font-size: 15px;
-    border-radius: 6px;
-    box-shadow : 1px 2px 2px 3px  rgb(107, 100, 100);
-    outline: none;
-    
-  }
-  .image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    gap: 15px;
-    padding: 5px;
-    width: 37%;
-    margin-bottom: 5%;
-    border-radius: 6px;
-    box-shadow : 1px 2px 2px 3px  rgb(107, 100, 100);
+.btn {
+  background-color: #a3d8a5;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #000;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
 
-  }
-  .image p{
-    height: 25px;
-    margin: 0;
-    color: rgba(0, 0, 0, 0.6);
-  }
-  .label{
-    background-color: white;
-    width: 100px;
-    height: 30px;
-  }
-  .image input{
-    border: none;
-    height: 25px;
-  }
-  .title{
-    margin-bottom: 20px;
-    
-  }
-  #titlein{
-    width: 200px;
-    height: 30px;
-  }
-  
-  .healthbtn{
-    background-color: rgb(20, 17, 17);
-    padding: 10px;
-    width: 90px;
-    border: none;
-    border-radius: 20px;
-    color: white;
-  }
-  .textarea{
-    overflow-y: hidden;
-  }
+.btn:hover {
+  background-color: #81c985;
+}
 
-  .body h1{
-    color:white;
-    font-size: 3.4em;
+.btn a {
+  color: #000;
+  text-decoration: none;
+}
 
-  }
-  .body h3{
-    margin-top:-10px;
-    color:#212e21;
-    width:100%;
-    font-family: poppins;
-  }
- .dashimg img{
-   width: 300px;
-   height: 400px;
-   margin-right: 150px;
-   margin-top: -30px;
-  }
-  .welcomingbody{
-  margin-left: 150px;
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #81c985;
+}
+
+.contentContainer {
+  display: flex;
+}
+
+.body {
+  /* background-color: #a3d8a5; */
+  height: 89vh;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 10%;
+}
+
+.upperpart img {
+  width: 70%;
+  height: 35vh;
+  margin-top: 20px;
+}
+
+.upperpart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hbody {
+  background-color: #a3d8a5;
+  height: 110vh;
+  width: 1188px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.lowerpart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 140px;
+}
+
+.hbtn {
+  border: 2px solid #a3d8a5;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+}
+
+.btn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hbody h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hbody2 {
+  background-color: white;
+  width: 80%;
+  margin-left: 120px;
+  height: 90%;
+}
+
+.mama,
+.baby {
+  background-color: #a3d8a5;
+  width: 300px;
+}
+
+.mama {
+  margin-top: 40px;
+}
+
+.baby h5,
+.mama h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.baby p,
+.mama p {
+  margin-left: 20px;
+}
+
+.body h1 {
+  color: white;
+  font-size: 3.4em;
+}
+
+.body h3 {
+  margin-top: -10px;
+  color: #212e21;
+  width: 100%;
+  font-family: poppins;
+}
+
+.dashimg img {
+  width: 300px;
+  height: 400px;
+  margin-right: 150px;
   margin-top: -30px;
-  }
+}
+
+.welcomingbody {
+  /* margin-left: 150px;
+  margin-top: -30px; */
+  /* margin:auto; */
+}
+.welcomingbody h3{
+  width: 630px
+}
+
+
+.welcomingbody h1 {
+  color: green;
+}
+.dashboardContainer{
+  margin:auto;
+  margin-left: 15%;
+}
+.body dashboardContainer{
+  height: auto;
+}

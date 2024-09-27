@@ -2,7 +2,7 @@ const BASE_URL = "https://sore-puce-brown-bear-sock.cyclic.app/api/v1";
 
 export const createAppointment = async (data) => {
   try {
-    const response = await fetch(`${BASE_URL}/appointments`, {
+    const response = await fetch(`${BASE_URL}/appointment/create`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -11,9 +11,11 @@ export const createAppointment = async (data) => {
     });
 
     if (response.ok) {
+      window.alert("Appointment was successfully created!");
       const result = await response.json();
       return result;
     } else {
+      window.alert("Failed to create the appointment, try again!");
       throw new Error("Failed to create appointment");
     }
   } catch (error) {
@@ -55,3 +57,23 @@ export const deleteAppointment = async (appointmentId) => {
     throw error;
   }
   };
+
+
+export const sendBroadcastMessages = async (data) => {
+  try {
+    const response = await fetch(`${BASE_URL}/broadcast/send`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+      window.alert("Broadcast queue is well done!");
+    }
+  } catch (error) {
+    console.log("Error:", error);
+    throw error;
+  }
+};

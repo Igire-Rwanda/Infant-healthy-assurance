@@ -70,10 +70,10 @@ const Appointments = () => {
       <SideMenu/>
       </div>
 
-      <div className="body">
+      <div className="body appointmentContainer">
       <h2>Appointments</h2>
 
-      <form >
+      <form onSubmit={handleSubmit} >
         <label>
           Doctor Name: <br/>
           <input
@@ -104,7 +104,7 @@ const Appointments = () => {
           />
         </label>
         <br />
-        <button className="btn" type="submit" onSubmit={handleSubmit}>Create Appointment</button>
+        <button className="btn" type="submit" >Create Appointment</button>
       </form>
       <ul>
         {appointments.map((appointment) => (
